@@ -1,0 +1,19 @@
+/*html {
+	background-color: #C0C0C0;
+}*/
+
+#container { 
+	width: 960px; 
+	margin: 0 auto; 
+	/*background-color: #FFFFFF;*/
+}
+
+header {
+	background-color: #D00000;
+	height: 100px;
+}
+
+.subtitle {
+	color: #C0C0C0;
+	font-style: oblique;
+}
