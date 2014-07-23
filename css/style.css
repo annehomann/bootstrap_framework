@@ -3,8 +3,6 @@ html, body {
 }
 body {
 	background-color: #eeeeee;
-	margin: 0;
-	padding: 0;
 }
 .container { 
 	max-width: 960px; 
@@ -63,13 +61,14 @@ span.glyphicon {
 
 .heading {
 	margin-top: -2px;
+	font-size: 1.8em;
 }
 
 
 /*Subtitle under product heading*/
 .subtitle {
 	color: #666666;
-	font-size: 20px;
+	font-size: 1em;
 	font-style: normal;
 	margin-top: -6px;
 	margin-bottom: 16px;
@@ -90,17 +89,18 @@ span.glyphicon {
 
 
 /*For buttons on side*/
+/*Mobile first*/
 .custom_book {
-    width: 180px !important;
+    width: 140px;
     margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: -4px;
+    margin-bottom: 10px;
+    margin-left: 40px;
     background-color: #ff3333;
     border-color: #ff3333;
 }
 .custom_vouch {
-    width: 180px !important;
-    margin-left: -4px;
+    width: 140px;
+    margin-left: 25px;
     margin-bottom: -5px;
     background-color: #008acd;
     border-color: #008acd;
@@ -307,11 +307,7 @@ span.glyphicon {
         float:none;
     }
 }
-@media (max-width: 480px) { 
-    .nav-tabs > li {
-        float:none;
-    }
-}
+
 
 
 
