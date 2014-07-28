@@ -19,31 +19,34 @@ img {
 }
 
 /*Changes to glyphicons*/
-span.glyphicon-heart {
+.glyphicon-heart {
     padding-right: 5px;
 }
-span.glyphicon-print {
+.glyphicon-print {
     padding-left: 5px;
 }
-span.glyphicon-envelope {
+.glyphicon-envelope {
     padding-left: 2px;
 }
-span.glyphicon-user {
+.glyphicon-user {
     padding-left: 2px;
     font-size: 1.3em;
 }
-span.glyphicon-stop {
+.glyphicon-stop {
 	font-size: 0.7em;
 }
-span.glyphicon-minus {
+.glyphicon-minus {
     font-size: 1.6em;
 }
-span.glyphicon-star, .glyphicon-heart, 
+.glyphicon-star {
+    font-size: 1.2em;
+}
+.glyphicon-heart, 
 	.glyphicon-print, .glyphicon-envelope,
 	.glyphicon-search {
     font-size: 1.4em;
 }
-span.glyphicon {
+.glyphicon {
     color: #008acd;
 }
 
@@ -54,7 +57,7 @@ span.glyphicon {
 	height: 100px;
 }
 
-.dotted_line {
+.dotted-line {
 	border-top: dotted 1px;
 	color: #CCCCCC;
 }
@@ -90,29 +93,29 @@ span.glyphicon {
 
 /*For buttons on side*/
 /*Mobile first*/
-.custom_book {
+.custom-book {
     width: 140px;
     margin-top: 15px;
     margin-bottom: 10px;
-    margin-left: 40px;
+    margin-left: 15px;
     background-color: #ff3333;
     border-color: #ff3333;
 }
-.custom_vouch {
+.custom-vouch {
     width: 140px;
-    margin-left: 25px;
+    margin-left: 15px;
     margin-bottom: -5px;
     background-color: #008acd;
     border-color: #008acd;
 }
-.custom_vouch:hover {
+.custom-vouch:hover {
 	background-color: #006699;
 	border-color: #006699;	
 }
 
 
 /*Nav Tabs - Social Media*/
-.social_first {
+.social-first {
 	margin-left: 102px;	
 	/*padding-right: 8px;*/
 	margin-bottom: -50px;
@@ -122,10 +125,10 @@ span.glyphicon {
 	/*padding-right: 8px;*/
 	margin-left: 160px;	
 }
-.social_last {
+.social-last {
 	margin-left: 258px;	
 }
-.content_header {
+.content-header {
 	font-size: 14px;
 	font-weight: bold;
 }
@@ -149,7 +152,7 @@ span.glyphicon {
 
 
 /*Banner*/
-.why_choose {
+.why-choose {
 	margin-top: 100px;
 }
 
@@ -172,41 +175,41 @@ span.glyphicon {
 	font-size: 12px;
 	font-weight: bold;
 }
-.user_info_title {
+.user-info-title {
 	color: #666;
 	font-size: 12px;
 	font-weight: bold;
 }
-.user_info {
+.user-info {
 	color: #666;
 	font-size: 12px;
 }
-.username_comment {
+.username-comment {
 	font-style: italic;
 	font-size: 11px;
 	color: #999999;
 }
-.review_heading {
+.review-heading {
 	font-size: 18px;
 	color: #333333;
 	margin-top: -10px;
 }
-.review_thumb {
+.review-thumb {
 	margin-top: -10px;
 }
-.review_rating {
+.review-rating {
 	margin-top: -10px;
 	padding-left: 44px;
 	font-size: 12px;
 	font-weight: bold;
 }
-.review_row_gap {
+.review-row-gap {
 	margin-top: -10px;
 }
-.review_divider {
+.review-divider {
 	margin-bottom: 6px;
 }
-.review_dotted_line {
+.review-dotted-line {
 	margin-top: 6px;
 	border-top: dotted 1px;
 	color: #CCCCCC;
@@ -234,13 +237,13 @@ span.glyphicon {
 }
 
 /*First well*/
-.ex_price {
+.ex-price {
 	margin-top: -6px;
 	margin-bottom: -10px;
 	font-size: 40px;
 	font-weight: bold;
 }
-.ex_info {
+.ex-info {
 	margin-top: -10px;
 	margin-bottom: -10px;
 }
@@ -255,7 +258,7 @@ span.glyphicon {
 .or {
 	color: #666666;
 }
-.vouch_title {
+.vouch-title {
 	font-size: 13px;
 	font-weight: bold;
 }
@@ -264,30 +267,24 @@ span.glyphicon {
 	margin-top: -12px;
 }
 
-/*.dot_line_sh {
-	border-top: dotted 1px;
-	color: #CCCCCC;
-	width: 20%;
-}*/
-
 /*Third well*/
-.thumbnail_border {
+.thumbnail-border {
 	padding: 15px;
 	border: 1px solid #CCCCCC;
 	background-color: #fff;
 }
-.similar_ex {
+.similar-ex {
 	font-size: 16px;
 	margin-top: -1px;
 }
-.cap_text {
+.cap-text {
 	font-size: 12px;
 	line-height: 14px;
 	padding-top: 5px;
 	margin-bottom: 0px;
 	color: #666
 }
-.similar_ex_divider {
+.similar-ex-divider {
 	margin-top: 6px;
 	margin-bottom: 12px;
 }
@@ -299,20 +296,4 @@ span.glyphicon {
 	height: 30px;
 	margin-top: 60px;
 }
-
-
-/*Resposive area*/
-@media (max-width: 480px) { 
-    .nav-tabs > li {
-        float:none;
-    }
-}
-
-
-
-
-
-
-
-
 

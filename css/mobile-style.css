@@ -1,44 +1,14 @@
-html, body { 
-	overflow-x: hidden; 
-}
-body {
-	background-color: #eeeeee;
-}
-.container { 
-	max-width: 960px; 
-	margin: 0 auto; 
-	background-color: #fff;
-}
-a { 
-	color: #008acd; 
-}
-img {
-	display: block;
-	height: auto;
-	max-width: 100%;
-}
-
-/*Changes to glyphicons*/
-.glyphicon-star {
-    font-size: 1.2em;
-}
-.glyphicon-stop {
-	font-size: 0.7em;
-}
-.glyphicon {
-    color: #008acd;
-}
-
 /*Header*/
-.top {
+.top-mobile {
 	background-color: #ff3333;
 	height: 70px;
 }
 /*Condensed Info*/
+
 .review-stars {
 	padding: 5px 0 5px 10px;
 }
-.price {
+.price-small {
 	color: #000;
 	background-color: #ddd;
 	font-weight: bold;
@@ -55,16 +25,16 @@ img {
 }
 
 /*Main Content*/
-.heading {
+.heading-mobile {
 	margin-top: 10px;
 }
-.subtitle {
+.subtitle-mobile {
 	padding-top: 5px;
 }
 .venue-header {
 	margin-bottom: 5px;
 }
-.content-header {
+.content-header-mobile {
 	padding-top: 10px;
 	margin-bottom: 5px;
 }
@@ -75,14 +45,14 @@ img {
 	margin-left: -40px;
 	line-height: 18px;
 }
-.includes {
+.includes-mobile {
 	list-style-type: none;
 	font-size: 12px;
 	color: #666666;
 	margin-left: -40px;
 	line-height: 22px;
 }
-.content {
+.content-mobile {
 	font-size: 12px;
 	color: #666666;
 	text-align: justify;
@@ -90,41 +60,17 @@ img {
 
 /*Might consider*/
 /*Recently view*/
-.well {
-	border-style: solid;
-	border-left: none;
-	border-right: none;
-	border-bottom: none;
-	border-top-color: red;
-	border-top-width: 2px;
-}
-.thumbnail_border {
-	padding: 15px;
-	border: 1px solid #CCCCCC;
-	background-color: #fff;
-}
-.similar_ex {
-	font-size: 16px;
-	margin-top: -1px;
-}
-.cap_text {
+.ca-text {
 	font-size: 12px;
 	line-height: 14px;
 	padding-top: 5px;
 	margin-bottom: 0px;
 	color: #666
 }
-.similar_ex_divider {
-	margin-top: 6px;
-	margin-bottom: 12px;
-}
-
-.bottom-space {
-	margin-top : 50px;
-}
 
 /*Sticky Footer = Call to action buttons*/
-.custom_book {
+
+.custom-book-mobile {
     width: 140px;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -132,18 +78,17 @@ img {
     background-color: #ff3333;
     border-color: #ff3333;
 }
-.custom_vouch {
+.custom-vouch-mobile {
     width: 140px;
     margin-left: 25px;
     margin-bottom: -5px;
     background-color: #008acd;
     border-color: #008acd;
 }
-.custom_vouch:hover {
+.custom-vouch-mobile:hover {
 	background-color: #006699;
 	border-color: #006699;	
 }
-.bottom {
-	background-color: #333333;
-	height: 30px;
+.bottom-space {
+	height: 60px;
 }

@@ -10,7 +10,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- <link href="css/bootstrap-responsive.css" rel="stylesheet"> -->
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/sandbox.css" media="screen" rel="stylesheet">
+        <link href="css/mobile-style.css" rel="stylesheet">
         <link href="css/datepicker.css" rel="stylesheet">
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -24,358 +24,340 @@
         <![endif]-->
     </head>
     <body>
-        <header class="top">            
-            <div class="row">
-                <div class="col-md-12"></div>                  
+
+        <header class="top hidden-xs">            
+            <div class="row hidden-xs">
+                <div class="col-lg-12 col-md-12 col-sm-12"></div>                  
             </div>            
         </header>
 
-        <div class="container">     
+        <div class="container hidden-xs">     
 
             <div class="bcrumb">
                 <div class="row hidden-xs">
-                    <div class="col-md-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
                         <ul class="breadcrumb">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Driving Experiences</a></li>
                             <li><a href="#">V8 Experiences</a></li>
                             <li class="current">V8 Race Car Driving 4 Laps</li>
                         </ul>
-                    <hr class="dotted_line">
+                    <hr class="dotted-line">
                     </div>  
                 </div>    
             </div>
 
             <div class="title">
-                <div class="row">
-                    <div class="col-md-9 col-xs-12">
-                        <div id="mobileHiddenDiv" class="visible-xs-block">
-                            <img src="img/test01.jpg" class="main-image"> 
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-search hidden-xs"></span>
-                            <span class="divider hidden-xs">&nbsp;|&nbsp;</span>
-                            <a href="#">&nbsp;Read all reviews&nbsp;</a>
-                        </div>
-                    <h2 class="heading">V8 Race Car Driving - 4 Laps</h2>
+                <div class="row hidden-xs">
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                      <h2 class="heading">V8 Race Car Driving - 4 Laps</h2>
                     </div>
                 </div>
             </div>
 
             <div class="sub">
-                <div class="row">
-                    <div class="col-md-9">
+                <div class="row hidden-xs">
+                    <div class="col-lg-9 col-md-9 col-sm-7">
                       <p class="subtitle">VIC, SA &amp; WA</p>
                     </div>
-                    <div class="col-md-3 hidden-xs">
+                    <div class="col-lg-3 col-md-3 col-sm-5">
                         <div class="wishlist pull-right">  
-                            <span class="glyphicon glyphicon-heart"></span><a href="#">&nbsp;Add to my wishlist&nbsp;</a><span class="divider">&nbsp;|&nbsp;</span><span class="glyphicon glyphicon-print"></span> <span class="glyphicon glyphicon-envelope"></span>
+                            <i class="glyphicon glyphicon-heart"></i><a href="#">&nbsp;Add to my wishlist&nbsp;</a><span class="divider">&nbsp;|&nbsp;</span><i class="glyphicon glyphicon-print"></i> <i class="glyphicon glyphicon-envelope"></i>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-12 hidden-xs">
-                    <hr class="line">
+            <div class="row hidden-xs">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <hr style="height:1px;border:none;color:#333;background-color:#CCCCCC;" class="line">
                 </div>
             </div>
 
             <div class="rating">
-                <div class="row">
-                    <div class="col-md-9 hidden-xs">
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-search hidden-xs"></span>
-                      <span class="divider hidden-xs">&nbsp;|&nbsp;</span>
+                <div class="row hidden-xs">
+                    <div class="col-lg-9 col-md-9 col-sm-8">
+                      <i class="glyphicon glyphicon-star"></i>
+                      <i class="glyphicon glyphicon-star"></i>
+                      <i class="glyphicon glyphicon-star"></i>
+                      <i class="glyphicon glyphicon-star"></i>
+                      <i class="glyphicon glyphicon-star"></i>
+                      <i class="glyphicon glyphicon-search"></i>
+                      <span class="divider">&nbsp;|&nbsp;</span>
                       <a href="#">&nbsp;Read all reviews&nbsp;</a>
-                      <span class="divider hidden-xs">&nbsp;|&nbsp;</span> 
-                      <a href="#" class="hidden-xs">&nbsp;Write a review&nbsp;</a>
+                      <span class="divider">&nbsp;|&nbsp;</span> 
+                      <a href="#">&nbsp;Write a review&nbsp;</a>
                     </div>
-                    <div class="col-md-3 hidden-xs">
+                    <div class="col-lg-3 col-md-3 col-sm-4">
                       <strong><p class="text-right">CODE: VRE450</p></strong>
                     </div>
                 </div>
             </div>
 
-
-            <div class="row"> <!-- Parent row -->
-                <div class="col-md-9">
+            <div class="row hidden-xs"> <!-- Parent row -->
+                <div class="col-lg-9 col-md-9 col-sm-8">
                     <div class="main_image hidden-xs">
                         <img src="img/test01.jpg" class="main-image">  
                     </div>
-                    <footer class="navbar-default navbar-fixed-bottom">
-                        <div id="mobileHiddenDiv" class="visible-xs-block">
-                            <button type="button" class="btn btn-danger custom_book">Book a date</button>
-                            <button type="button" class="btn btn-primary custom_vouch">Buy a voucher</button>
-                        </div>
-                    </footer>
+
                     <!-- Nav bar with main content -->
-
-
-                    <div class="main_content hidden-xs">
+                    <div class="main_content">
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
                             <li><a href="#tab_b" data-toggle="tab">More Info</a></li>
                             <li><a href="#menu" data-toggle="tab">Menu</a></li>
                             <li><a href="#reviews" data-toggle="tab">Reviews</a></li>
                             <li><a href="#tab_c" data-toggle="tab">Map</a></li>
-                            <li><img class="social_first hidden-xs" src="img/fb_icon.png"></li>
-                            <li><img class="social hidden-xs" src="img/fbshare_icon.png"></li>
-                            <li><img class="social_last hidden-xs" src="img/pin_icon.png"></li>
+                            <li><img class="social-first hidden-sm" src="img/fb_icon.png"></li>
+                            <li><img class="social hidden-sm" src="img/fbshare_icon.png"></li>
+                            <li><img class="social-last hidden-sm" src="img/pin_icon.png"></li>
                         </ul>
                     </div>
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div class="tab-pane active" id="home">
                             <br />
-                            <h5 class="content_header">Highlights</h5>
-                            <p class="highlights"><span class="glyphicon glyphicon-stop"></span>&nbsp;Drive a real V8 race car</p><br />
+                            <h5 class="content-header">Highlights</h5>
+                            <p class="highlights"><i class="glyphicon glyphicon-stop"></i>&nbsp;Drive a real V8 race car</p><br />
                             <h5 class="content_header">What's included</h5>
                             <ul class="includes">
-                                <li><span class="glyphicon glyphicon-stop"></span>&nbsp;You drive 6 laps (Total of 13.2KM's) around Wakefield Park Raceway</li>
-                                <li><span class="glyphicon glyphicon-stop"></span>&nbsp;Race suits and helmets will be provided</li>
-                                <li><span class="glyphicon glyphicon-stop"></span>&nbsp;Driver briefing is held before the race event</li>
-                                <li><span class="glyphicon glyphicon-stop"></span>&nbsp;Choice of Ford or Holden V8 race car</li>
+                                <li><i class="glyphicon glyphicon-stop"></i>&nbsp;You drive 6 laps (Total of 13.2KM's) around Wakefield Park Raceway</li>
+                                <li><i class="glyphicon glyphicon-stop"></i>&nbsp;Race suits and helmets will be provided</li>
+                                <li><i class="glyphicon glyphicon-stop"></i>&nbsp;Driver briefing is held before the race event</li>
+                                <li><i class="glyphicon glyphicon-stop"></i>&nbsp;Choice of Ford or Holden V8 race car</li>
                             </ul>
-                            <p class="content hidden-xs">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                            <p class="content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
                             <br />
-                            <h5 class="content_header hidden-xs">Guidelines</h5>
-                            <p class="content hidden-xs">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                            <h5 class="content_header hidden-xs">Suitability</h5>
-                            <p class="content hidden-xs">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                            <h5 class="content_header">Guidelines</h5>
+                            <p class="content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                            <h5 class="content_header">Suitability</h5>
+                            <p class="content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
                         </div>
-                        <div class="tab-pane hidden-xs" id="info">test</div>
-                        <div class="tab-pane hidden-xs" id="menu">test</div>
-                        <div class="tab-pane hidden-xs" id="reviews">test</div>
-                        <div class="tab-pane hidden-xs" id="map">test</div>
+                        <div class="tab-pane" id="info">test</div>
+                        <div class="tab-pane" id="menu">test</div>
+                        <div class="tab-pane" id="reviews">test</div>
+                        <div class="tab-pane" id="map">test</div>
                     </div>
 
-                    <div class="why_choose hidden-xs">
+                    <div class="why-choose">
                             <img src="img/why_ch.jpg" alt="banner">
                     </div>
 
                 <!-- Reviews section -->
-                <div class="reviews hidden-xs">
-                    <div class="row">
-                        <div class="col-md-12">
+                <div class="reviews">
+                    <div class="row hidden-xs">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
                             <h4>Heading</h4>
                             <hr class="redline">
-                            <span class="glyphicon glyphicon-user"></span><span class="username">&nbsp;roker73&nbsp;</span> | &nbsp;<span class="user_info_title">From: </span><span class="user_info">Milperra, NSW&nbsp;|&nbsp; </span><span class="user_info_title">&nbsp;Age: </span><span class="user_info">54 to 64&nbsp; | </span><span class="user_info_title">&nbsp;Gender: </span> 
-                            <span class="user_info">Male&nbsp; | </span><span class="user_info_title">&nbsp;Thrill Seeking: </span>
-                            <span class="user_info">I like excitement</span>
-                            <hr class="review_dotted_line">
+                            <i class="glyphicon glyphicon-user"></i><span class="username">&nbsp;roker73&nbsp;</span> | &nbsp;<span class="user-info-title">From: </span><span class="user-info">Milperra, NSW&nbsp;|&nbsp; </span><span class="user-info-title">&nbsp;Age: </span><span class="user-info">54 to 64&nbsp; | </span><span class="user-info-title">&nbsp;Gender: </span> 
+                            <span class="user-info">Male&nbsp; | </span><span class="user-info-title hidden-sm">&nbsp;Thrill Seeking: </span>
+                            <span class="user-info hidden-sm">I like excitement</span>
+                            <hr class="review-dotted-line">
                             <div class="row">
-                                <div class="col-md-2">
+                                <div class="col-lg-2 col-md-2 col-sm-4">
                                     <div class="thumbnail pull-left">
-                                        <img src="img/ph_150.jpg" class="review_thumb">
+                                        <img src="img/ph_150.jpg" class="review-thumb">
                                     </div>
                                 </div>
-                                <div class="col-md-7">
-                                    <h4 class="review_heading">Enjoyed every minute of it</h4>
+                                <div class="col-lg-7 col-md-7 col-sm-8">
+                                    <h4 class="review-heading">Enjoyed every minute of it</h4>
                                     <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reiciendis nulla modi praesentium doloribus debitis nisi quo consequuntur excepturi fugit cumque eius voluptas dicta, porro facilis neque fuga cupiditate magnam</p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;<span class="username_comment">by roker73 (21 July 2013)</span>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>&nbsp;&nbsp;<span class="username-comment">by roker73 (21 July 2013)</span>
                                 </div>
-                                <div class="col-md-3">
-                                    <p class="review_rating">QUALITY</p>
-                                    <p class="review_rating">VALUE</p>
-                                    <p class="review_rating">STAFF &amp; SERVICE</p>
-                                    <p class="review_rating">FUN FACTOR</p>
+                                <div class="col-lg-3 col-md-3 col-sm-3 hidden-sm">
+                                    <p class="review-rating">QUALITY</p>
+                                    <p class="review-rating">VALUE</p>
+                                    <p class="review-rating">STAFF &amp; SERVICE</p>
+                                    <p class="review-rating">FUN FACTOR</p>
                                 </div>
                             </div>       
                         </div> 
                     </div>
-                    <div class="row">
-                        <div class="col-md-12 review_row_gap">
-                            <hr class="review_divider">
-                            <span class="glyphicon glyphicon-user"></span><span class="username">&nbsp;roker73&nbsp;</span> | &nbsp;<span class="user_info_title">From: </span><span class="user_info">Milperra, NSW&nbsp;|&nbsp; </span><span class="user_info_title">&nbsp;Age: </span><span class="user_info">54 to 64&nbsp; | </span><span class="user_info_title">&nbsp;Gender: </span> 
-                            <span class="user_info">Male&nbsp; | </span><span class="user_info_title">&nbsp;Thrill Seeking: </span>
-                            <span class="user_info">I like excitement</span>
-                            <hr class="review_dotted_line">
+                    <div class="row hidden-xs">
+                        <div class="col-lg-12 col-md-12 col-sm-12 review-row-gap">
+                            <hr class="review-divider">
+                            <i class="glyphicon glyphicon-user"></i><span class="username">&nbsp;roker73&nbsp;</span> | &nbsp;<span class="user-info-title">From: </span><span class="user-info">Milperra, NSW&nbsp;|&nbsp; </span><span class="user-info-title">&nbsp;Age: </span><span class="user-info">54 to 64&nbsp; | </span><span class="user-info-title">&nbsp;Gender: </span> 
+                            <span class="user-info">Male&nbsp; | </span><span class="user-info-title hidden-sm">&nbsp;Thrill Seeking: </span>
+                            <span class="user-info hidden-sm">I like excitement</span>
+                            <hr class="review-dotted-line">
                             <div class="row">
-                                <div class="col-md-2">
+                                <div class="col-lg-2 col-md-2 col-sm-4">
                                     <div class="thumbnail pull-left">
-                                        <img src="img/ph_150.jpg" class="review_thumb">
+                                        <img src="img/ph_150.jpg" class="review-thumb">
                                     </div>
                                 </div>
-                                <div class="col-md-7">
-                                    <h4 class="review_heading">Enjoyed every minute of it</h4>
+                                <div class="col-lg-7 col-md-7 col-sm-8">
+                                    <h4 class="review-heading">Enjoyed every minute of it</h4>
                                     <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reiciendis nulla modi praesentium doloribus debitis nisi quo consequuntur excepturi fugit cumque eius voluptas dicta, porro facilis neque fuga cupiditate magnam</p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;<span class="username_comment">by roker73 (21 July 2013)</span>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>&nbsp;&nbsp;<span class="username-comment">by roker73 (21 July 2013)</span>
                                 </div>
-                                <div class="col-md-3">
-                                    <p class="review_rating">QUALITY</p>
-                                    <p class="review_rating">VALUE</p>
-                                    <p class="review_rating">STAFF &amp; SERVICE</p>
-                                    <p class="review_rating">FUN FACTOR</p>                                
+                                <div class="col-lg-3 col-md-3 col-sm-3 hidden-sm">
+                                    <p class="review-rating">QUALITY</p>
+                                    <p class="review-rating">VALUE</p>
+                                    <p class="review-rating">STAFF &amp; SERVICE</p>
+                                    <p class="review-rating">FUN FACTOR</p>
                                 </div>
                             </div>       
                         </div> 
                     </div>
-                    <div class="row">
-                        <div class="col-md-12 review_row_gap">
-                            <hr class="review_divider">
-                            <span class="glyphicon glyphicon-user"></span><span class="username">&nbsp;roker73&nbsp;</span> | &nbsp;<span class="user_info_title">From: </span><span class="user_info">Milperra, NSW&nbsp;|&nbsp; </span><span class="user_info_title">&nbsp;Age: </span><span class="user_info">54 to 64&nbsp; | </span><span class="user_info_title">&nbsp;Gender: </span> 
-                            <span class="user_info">Male&nbsp; | </span><span class="user_info_title">&nbsp;Thrill Seeking: </span>
-                            <span class="user_info">I like excitement</span>
-                            <hr class="review_dotted_line">
+                    <div class="row hidden-xs">
+                        <div class="col-lg-12 col-md-12 col-sm-12 review-row-gap">
+                            <hr class="review-divider">
+                            <i class="glyphicon glyphicon-user"></i><span class="username">&nbsp;roker73&nbsp;</span> | &nbsp;<span class="user-info-title">From: </span><span class="user-info">Milperra, NSW&nbsp;|&nbsp; </span><span class="user-info-title">&nbsp;Age: </span><span class="user-info">54 to 64&nbsp; | </span><span class="user-info-title">&nbsp;Gender: </span> 
+                            <span class="user-info">Male&nbsp; | </span><span class="user-info-title hidden-sm">&nbsp;Thrill Seeking: </span>
+                            <span class="user-info hidden-sm">I like excitement</span>
+                            <hr class="review-dotted-line">
                             <div class="row">
-                                <div class="col-md-2">
+                                <div class="col-lg-2 col-md-2 col-sm-4">
                                     <div class="thumbnail pull-left">
-                                        <img src="img/ph_150.jpg" class="review_thumb">
+                                        <img src="img/ph_150.jpg" class="review-thumb">
                                     </div>
                                 </div>
-                                <div class="col-md-7">
-                                    <h4 class="review_heading">Enjoyed every minute of it</h4>
+                                <div class="col-lg-7 col-md-7 col-sm-8">
+                                    <h4 class="review-heading">Enjoyed every minute of it</h4>
                                     <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reiciendis nulla modi praesentium doloribus debitis nisi quo consequuntur excepturi fugit cumque eius voluptas dicta, porro facilis neque fuga cupiditate magnam</p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;<span class="username_comment">by roker73 (21 July 2013)</span>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>&nbsp;&nbsp;<span class="username-comment">by roker73 (21 July 2013)</span>
                                 </div>
-                                <div class="col-md-3">
-                                    <p class="review_rating">QUALITY</p>
-                                    <p class="review_rating">VALUE</p>
-                                    <p class="review_rating">STAFF &amp; SERVICE</p>
-                                    <p class="review_rating">FUN FACTOR</p>                               
+                                <div class="col-lg-3 col-md-3 col-sm-3 hidden-sm">
+                                    <p class="review-rating">QUALITY</p>
+                                    <p class="review-rating">VALUE</p>
+                                    <p class="review-rating">STAFF &amp; SERVICE</p>
+                                    <p class="review-rating">FUN FACTOR</p>
                                 </div>
                             </div>       
                         </div> 
                     </div>
-                    <div class="row">
-                        <div class="col-md-12 review_row_gap">
-                            <hr class="review_divider">
-                            <span class="glyphicon glyphicon-user"></span><span class="username">&nbsp;roker73&nbsp;</span> | &nbsp;<span class="user_info_title">From: </span><span class="user_info">Milperra, NSW&nbsp;|&nbsp; </span><span class="user_info_title">&nbsp;Age: </span><span class="user_info">54 to 64&nbsp; | </span><span class="user_info_title">&nbsp;Gender: </span> 
-                            <span class="user_info">Male&nbsp; | </span><span class="user_info_title">&nbsp;Thrill Seeking: </span>
-                            <span class="user_info">I like excitement</span>
-                            <hr class="review_dotted_line">
+                    <div class="row hidden-xs">
+                        <div class="col-lg-12 col-md-12 col-sm-12 review-row-gap">
+                            <hr class="review-divider">
+                            <i class="glyphicon glyphicon-user"></i><span class="username">&nbsp;roker73&nbsp;</span> | &nbsp;<span class="user-info-title">From: </span><span class="user-info">Milperra, NSW&nbsp;|&nbsp; </span><span class="user-info-title">&nbsp;Age: </span><span class="user-info">54 to 64&nbsp; | </span><span class="user-info-title">&nbsp;Gender: </span> 
+                            <span class="user-info">Male&nbsp; | </span><span class="user-info-title hidden-sm">&nbsp;Thrill Seeking: </span>
+                            <span class="user-info hidden-sm">I like excitement</span>
+                            <hr class="review-dotted-line">
                             <div class="row">
-                                <div class="col-md-2">
+                                <div class="col-lg-2 col-md-2 col-sm-4">
                                     <div class="thumbnail pull-left">
-                                        <img src="img/ph_150.jpg" class="review_thumb">
+                                        <img src="img/ph_150.jpg" class="review-thumb">
                                     </div>
                                 </div>
-                                <div class="col-md-7">
-                                    <h4 class="review_heading">Enjoyed every minute of it</h4>
+                                <div class="col-lg-7 col-md-7 col-sm-8">
+                                    <h4 class="review-heading">Enjoyed every minute of it</h4>
                                     <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reiciendis nulla modi praesentium doloribus debitis nisi quo consequuntur excepturi fugit cumque eius voluptas dicta, porro facilis neque fuga cupiditate magnam</p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;<span class="username_comment">by roker73 (21 July 2013)</span>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>&nbsp;&nbsp;<span class="username-comment">by roker73 (21 July 2013)</span>
                                 </div>
-                                <div class="col-md-3">
-                                    <p class="review_rating">QUALITY</p>
-                                    <p class="review_rating">VALUE</p>
-                                    <p class="review_rating">STAFF &amp; SERVICE</p>
-                                    <p class="review_rating">FUN FACTOR</p>                               
+                                <div class="col-lg-3 col-md-3 col-sm-3 hidden-sm">
+                                    <p class="review-rating">QUALITY</p>
+                                    <p class="review-rating">VALUE</p>
+                                    <p class="review-rating">STAFF &amp; SERVICE</p>
+                                    <p class="review-rating">FUN FACTOR</p> 
                                 </div>
                             </div>       
                         </div> 
                     </div>
-                    <div class="row">
-                        <div class="col-md-12 review_row_gap">
-                            <hr class="review_divider">
-                            <span class="glyphicon glyphicon-user"></span><span class="username">&nbsp;roker73&nbsp;</span> | &nbsp;<span class="user_info_title">From: </span><span class="user_info">Milperra, NSW&nbsp;|&nbsp; </span><span class="user_info_title">&nbsp;Age: </span><span class="user_info">54 to 64&nbsp; | </span><span class="user_info_title">&nbsp;Gender: </span> 
-                            <span class="user_info">Male&nbsp; | </span><span class="user_info_title">&nbsp;Thrill Seeking: </span>
-                            <span class="user_info">I like excitement</span>
-                            <hr class="review_dotted_line">
+                    <div class="row hidden-xs">
+                        <div class="col-lg-12 col-md-12 col-sm-12 review-row-gap">
+                            <hr class="review-divider">
+                            <i class="glyphicon glyphicon-user"></i><span class="username">&nbsp;roker73&nbsp;</span> | &nbsp;<span class="user-info-title">From: </span><span class="user-info">Milperra, NSW&nbsp;|&nbsp; </span><span class="user-info-title">&nbsp;Age: </span><span class="user-info">54 to 64&nbsp; | </span><span class="user-info-title">&nbsp;Gender: </span> 
+                            <span class="user-info">Male&nbsp; | </span><span class="user-info-title hidden-sm">&nbsp;Thrill Seeking: </span>
+                            <span class="user-info hidden-sm">I like excitement</span>
+                            <hr class="review-dotted-line">
                             <div class="row">
-                                <div class="col-md-2">
+                                <div class="col-lg-2 col-md-2 col-sm-4">
                                     <div class="thumbnail pull-left">
-                                        <img src="img/ph_150.jpg" class="review_thumb">
+                                        <img src="img/ph_150.jpg" class="review-thumb">
                                     </div>
                                 </div>
-                                <div class="col-md-7">
-                                    <h4 class="review_heading">Enjoyed every minute of it</h4>
+                                <div class="col-lg-7 col-md-7 col-sm-8">
+                                    <h4 class="review-heading">Enjoyed every minute of it</h4>
                                     <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reiciendis nulla modi praesentium doloribus debitis nisi quo consequuntur excepturi fugit cumque eius voluptas dicta, porro facilis neque fuga cupiditate magnam</p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;<span class="username_comment">by roker73 (21 July 2013)</span>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <i class="glyphicon glyphicon-star"></i>&nbsp;&nbsp;<span class="username-comment">by roker73 (21 July 2013)</span>
                                 </div>
-                                <div class="col-md-3">
-                                    <p class="review_rating">QUALITY</p>
-                                    <p class="review_rating">VALUE</p>
-                                    <p class="review_rating">STAFF &amp; SERVICE</p>
-                                    <p class="review_rating">FUN FACTOR</p>                               
+                                <div class="col-lg-3 col-md-3 col-sm-3 hidden-sm">
+                                    <p class="review-rating">QUALITY</p>
+                                    <p class="review-rating">VALUE</p>
+                                    <p class="review-rating">STAFF &amp; SERVICE</p>
+                                    <p class="review-rating">FUN FACTOR</p>
                                 </div>
                             </div>       
                         </div> 
                     </div>
                     <!-- Recently viewed -->
-                    <div class="row">
-                        <div class="col-md-12">
+                    <div class="row hidden-xs">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
                             <br />
                             <h4>Recently Viewed</h4>
                             <hr class="redline">
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-lg-3 col-md-3 col-sm-4">
                                     <div class="thumbnail">
                                         <img src="img/ph_150.jpg">
-                                        <p class="cap_text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
+                                        <p class="cap-text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
                                         <p class="username_comment">Wakefield Park, Goulburn</p><br />
                                         <p class="price">$199</p>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-lg-3 col-md-3 col-sm-4">
                                     <div class="thumbnail">
                                         <img src="img/ph_150.jpg">
-                                        <p class="cap_text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
+                                        <p class="cap-text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
                                         <p class="username_comment">Wakefield Park, Goulburn</p><br />
                                         <p class="price">$199</p>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-lg-3 col-md-3 col-sm-4">
                                     <div class="thumbnail">
                                         <img src="img/ph_150.jpg">
-                                        <p class="cap_text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
+                                        <p class="cap-text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
                                         <p class="username_comment">Wakefield Park, Goulburn</p><br />
                                         <p class="price">$199</p>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-lg-3 col-md-3 hidden-sm">
                                     <div class="thumbnail">
                                         <img src="img/ph_150.jpg">
-                                        <p class="cap_text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
+                                        <p class="cap-text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
                                         <p class="username_comment">Wakefield Park, Goulburn</p><br />
                                         <p class="price">$199</p>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
                                     </div>
                                 </div>
                             </div>
@@ -386,17 +368,17 @@
 
 
             <!-- Right sidebar -->
-            <div class="col-xs-12 col-md-3">
+            <div class="col-lg-3 col-md-3 col-sm-4">
                 <div class="well hidden-xs">
-                    <h1 class="ex_price">$259</h1>
-                    <hr class="dotted_line">
-                    <p class="ex_info"><span class="glyphicon glyphicon-time"></span> 3 Hours <span class="glyphicon glyphicon-user"></span> 2 People</p>
-                    <hr class="dotted_line">
+                    <h1 class="ex-price">$259</h1>
+                    <hr class="dotted-line">
+                    <p class="ex-info"><i class="glyphicon glyphicon-time"></i> 3 Hours <i class="glyphicon glyphicon-user"></i> 2 People</p>
+                    <hr class="dotted-line">
                     <h5>Select Experience Date</h5>
                         <div class="form-group">
                             <div class="input-group date" id="dp3" data-date="1-08-2014" data-date-format="dd-mm-yyyy">
                               <input class="form-control" type="text" readonly="" value="choose date">
-                              <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                             </div>
                         </div>
                         <h5>Quantity</h5>
@@ -407,55 +389,56 @@
                                 <option>4</option>
                                 <option>5</option>
                             </select>
-                        <button type="button" class="btn btn-danger custom_book">Book a date</button><br />
-                        <span class="glyphicon glyphicon-ok-sign colour"></span>Low Price Guaranteed
+                        <button type="button" class="btn btn-danger custom-book">Book a date</button><br />
+                        <i class="glyphicon glyphicon-ok-sign colour"></i> Low Price Guaranteed
                 </div>
                 <div class="well hidden-xs">
                     <p class="or" align="center"> OR </p>
-                    <p class="vouch_title">Buy an Experience Voucher</p>
+                    <p class="vouch-title">Buy an Experience Voucher</p>
                     <p class="valid">valid for 12 months</p>
-                    <button type="button" class="btn btn-primary custom_vouch">Buy a voucher</button><br />
-                    <br /><span class="gg"><span class="glyphicon glyphicon-gift"></span> Gift Guarantee</span>
+                    <button type="button" class="btn btn-primary custom-vouch">Buy a voucher</button><br />
+                    <br /><span class="gg"><i class="glyphicon glyphicon-gift"></i> Gift Guarantee</span>
                 </div>
-                <div class="well">
-                    <h3 class="similar_ex">You Might Consider</h3>
-                    <div class="thumbnail_border">
+                <div class="well hidden-xs">
+                    <h3 class="similar-ex">You Might Consider</h3>
+                    <div class="thumbnail-border">
                         <img src="img/ph_150.jpg" alt="test">
-                        <div class="caption">
-                            <p class="cap_text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                            <strong>- $199</strong></p>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <hr class="similar_ex_divider">
-                            <img src="img/ph_150.jpg" alt="test">
-                            <p class="cap_text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                            <strong>- $199</strong></p>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <hr class="similar_ex_divider">
-                            <img src="img/ph_150.jpg" alt="test">
-                            <p class="cap_text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                            <strong>- $199</strong></p>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <hr class="similar_ex_divider">
-                            <img src="img/ph_150.jpg" alt="test">
-                            <p class="cap_text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                            <strong>- $199</strong></p>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
+                            <div class="caption">
+                                <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                <strong>- $199</strong></p>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <hr class="similar-ex-divider">
+                                <img src="img/ph_150.jpg" alt="test">
+                                <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                <strong>- $199</strong></p>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <hr class="similar-ex-divider">
+                                <img src="img/ph_150.jpg" alt="test">
+                                <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                <strong>- $199</strong></p>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <hr class="similar-ex-divider">
+                                <img src="img/ph_150.jpg" alt="test">
+                                <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                <strong>- $199</strong></p>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -463,11 +446,223 @@
 
         </div> <!-- container -->
 
-    <footer class="bottom">
-        <div class="row">
-          <div class="col-xs-12 col-md-12 footer"></div>                  
+    <footer class="bottom hidden-xs">
+        <div class="row hidden-xs">
+          <div class="col-lg-12 col-md-12 col-sm-12 footer"></div>                  
         </div>
     </footer>
+
+<!-- ********************************************************************************************************* -->
+<!-- **************                               MOBILE SITE CODE                              ************** -->
+<!-- ********************************************************************************************************* -->
+    <header class="top-mobile hidden-sm hidden-md hidden-lg">            
+            <div class="row hidden-sm hidden-md hidden-lg">
+                <div class="col-xs-12"></div>                  
+            </div>            
+        </header>
+
+        <div id="main-image">
+            <div class="row hidden-sm hidden-md hidden-lg">
+                <div class="col-xs-12">
+                    <img src="img/test01.jpg">
+                </div>
+            </div>
+        </div>
+            
+        <div id="condensed-info">
+            <div class="row hidden-sm hidden-md hidden-lg">
+                <div class="col-xs-12">
+                    <div class="review-stars">
+                        <i class="glyphicon glyphicon-star"></i>
+                        <i class="glyphicon glyphicon-star"></i>
+                        <i class="glyphicon glyphicon-star"></i>
+                        <i class="glyphicon glyphicon-star"></i>
+                        <i class="glyphicon glyphicon-star"></i>
+                        <a href="#">&nbsp;Read all reviews&nbsp;</a>
+                        <span class="price-small">$259</span>
+                        <div class="added-info">
+                            <i class="glyphicon glyphicon-time"></i>&nbsp;&nbsp;3 Hours&nbsp;
+                            <span class="side-pad"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;2 People&nbsp;</span>
+                            <span class="side-pad"><i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;Check availability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container hidden-sm hidden-md hidden-lg">   
+        <div class="row hidden-sm hidden-md hidden-lg"> 
+            <div class="col-xs-12">
+                <footer class="navbar-default navbar-fixed-bottom">
+                        <button type="button" class="btn btn-danger custom-book-mobile">Book a date</button>
+                        <button type="button" class="btn btn-primary custom-vouch-mobile">Buy a voucher</button>
+                </footer>
+            </div>
+        </div>
+
+        <div id="title">
+            <div class="row hidden-sm hidden-md hidden-lg">
+                <div class="col-xs-12">
+                <h3 class="heading-mobile">V8 Race Car Driving - 4 Laps<small>
+                <p class ="subtitle-mobile">VIC, SA &amp; WA</p></small></h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-content">
+            <div class="row hidden-sm hidden-md hidden-lg">
+                <div class="col-xs-12">
+                    <h5 class="venue-header">Venue</h5>
+                    <ul class="venue">
+                        <li>VIC - Sandown Raceway&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SA - Mallala Motorsport Park</li>
+                        <li>WA - Barbagallo Raceway</li>
+                    </ul>
+                    <h5 class="content-header-mobile">What's included</h5>
+                    <ul class="includes-mobile">
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;You drive 4 laps</li>
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;Race suits and helmets will be provided</li>
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;Driver briefing is held before the race event</li>
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;Choice of Ford or Holden V8 race car</li>
+                    </ul>
+                    <h5 class="content-header-mobile">Restrictions</h5>
+                    <ul class="includes-mobile">
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;You need to be 18 and have at least your P's</li>
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;All participants must be drug and alcohol</li>
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;Maximum weight of 130kgs</li>
+                    </ul>
+                    <h5 class="content-header-mobile">Session Length</h5>
+                    <ul class="includes-mobile">
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;This is a 2-3 hour event including the briefing and driving</li>
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;There are set race dates during the year, 
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;please check calendar for availability</p></li>
+                    </ul>
+                    <p class="content-mobile">Your V8 race car drive day begins as you register at the reception prior to your pre-drive tuition. This will prepare you for driving a race prepared V8 race car with information on handling the car, cornering, braking and the track map. Then it's time to suit up! Put on your professional helmet and hook up for discussion with your in-car instructor. You'll be fitted into your race suit and you'll feel the anticipation rise as other cars zoom by. Prior to your drive, you'll be asked whether you would prefer to drive a Ford or Holden. You are then strapped in behind the wheel, introduced to your personal in-car coach and off you go for your drive of a lifetime! Through your intercom, your in-car coach will talk you through advanced gear changes and brake points so that you can drive fast and safely. You will be able to drive on a fantastic circuit with long straights, thrilling undulations and challenging cornering. There's no limits on speed, so if someone on the track is lagging you're encouraged to boot it right past them. You can choose to purchase a Super Photo Souvenir and In-Car digital video recording with telemetry on a USB stick on the day for $49 each.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div id="might-consider">
+            <div class="row hidden-sm hidden-md hidden-lg">
+                <div class="col-xs-12">
+                    <h4>You Might Consider</h4>
+                    <div class="well">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="thumbnail-border">
+                                    <img src="img/ph_150.jpg" alt="test">
+                                    <div class="caption">
+                                        <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                        <strong>- $199</strong></p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <hr class="similar-ex-divider">
+                                        <img src="img/ph_150.jpg" alt="test">
+                                        <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                        <strong>- $199</strong></p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="thumbnail-border">
+                                    <img src="img/ph_150.jpg" alt="test">
+                                    <div class="caption">
+                                        <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                        <strong>- $199</strong></p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <hr class="similar-ex-divider">
+                                        <img src="img/ph_150.jpg" alt="test">
+                                        <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                        <strong>- $199</strong></p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="recent-view">
+            <div class="row hidden-sm hidden-md hidden-lg">
+                <div class="col-xs-12">
+                    <h4>Recently Viewed</h4>
+                    <div class="well">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="thumbnail-border">
+                                    <img src="img/ph_150.jpg" alt="test">
+                                    <div class="caption">
+                                        <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                        <strong>- $199</strong></p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <hr class="similar-ex-divider">
+                                        <img src="img/ph_150.jpg" alt="test">
+                                        <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                        <strong>- $199</strong></p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="thumbnail-border">
+                                    <img src="img/ph_150.jpg" alt="test">
+                                    <div class="caption">
+                                        <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                        <strong>- $199</strong></p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <hr class="similar-ex-divider">
+                                        <img src="img/ph_150.jpg" alt="test">
+                                        <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                        <strong>- $199</strong></p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row hidden-sm hidden-md hidden-lg">
+            <div class="bottom-space"></div>
+        </div>
+
+        </div> <!-- End of container -->
 
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -477,5 +672,5 @@
         $(".input-group.date").datepicker({ autoclose: true, todayHighlight: true });        
     </script>
 
-  </body>
+    </body>
 </html>
