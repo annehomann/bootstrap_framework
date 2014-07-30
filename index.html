@@ -9,7 +9,7 @@
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- <link href="css/bootstrap-responsive.css" rel="stylesheet"> -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/home-style.css" rel="stylesheet">
         <link href="css/datepicker.css" rel="stylesheet">
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -23,441 +23,328 @@
         <![endif]-->
     </head>
     <body>
-
-        <header class="top">            
-            <div class="row">
-                <div class="col-md-12"></div>                  
-            </div>            
-        </header>
-
-        <div class="container">     
-
-            <div class="bcrumb">
-                <div class="row hidden-xs">
-                    <div class="col-md-12">
-                        <ul class="breadcrumb">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Driving Experiences</a></li>
-                            <li><a href="#">V8 Experiences</a></li>
-                            <li class="current">V8 Race Car Driving 4 Laps</li>
-                        </ul>
-                    <hr class="dotted_line">
-                    </div>  
-                </div>    
-            </div>
-
-            <div class="title">
-                <div class="row">
-                    <div class="col-md-9">
-                      <h2 class="heading">V8 Race Car Driving - 4 Laps</h2>
-                    </div>
+        
+        <nav class="navbar navbar-default red-nav" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
-            </div>
-
-            <div class="sub">
-                <div class="row">
-                    <div class="col-md-9">
-                      <p class="subtitle">VIC, SA &amp; WA</p>
-                    </div>
-                    <div class="col-md-3 hidden-xs">
-                        <div class="wishlist pull-right">  
-                            <span class="glyphicon glyphicon-heart"></span><a href="#">&nbsp;Add to my wishlist&nbsp;</a><span class="divider">&nbsp;|&nbsp;</span><span class="glyphicon glyphicon-print"></span> <span class="glyphicon glyphicon-envelope"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <hr style="height:1px;border:none;color:#333;background-color:#CCCCCC;" class="line">
-                </div>
-            </div>
-
-            <div class="rating">
-                <div class="row">
-                    <div class="col-md-9">
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-search hidden-xs"></span>
-                      <span class="divider hidden-xs">&nbsp;|&nbsp;</span>
-                      <a href="#">&nbsp;Read all reviews&nbsp;</a>
-                      <span class="divider hidden-xs">&nbsp;|&nbsp;</span> 
-                      <a href="#" class="hidden-xs">&nbsp;Write a review&nbsp;</a>
-                    </div>
-                    <div class="col-md-3 hidden-xs">
-                      <strong><p class="text-right">CODE: VRE450</p></strong>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row"> <!-- Parent row -->
-                <div class="col-md-9">
-                    <div class="main_image">
-                        <img src="img/test01.jpg" class="main-image">  
-                    </div>
-
-                    <!-- Nav bar with main content -->
-                    <div class="main_content hidden-xs">
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-                            <li><a href="#tab_b" data-toggle="tab">More Info</a></li>
-                            <li><a href="#menu" data-toggle="tab">Menu</a></li>
-                            <li><a href="#reviews" data-toggle="tab">Reviews</a></li>
-                            <li><a href="#tab_c" data-toggle="tab">Map</a></li>
-                            <li><img class="social_first hidden-xs" src="img/fb_icon.png"></li>
-                            <li><img class="social hidden-xs" src="img/fbshare_icon.png"></li>
-                            <li><img class="social_last hidden-xs" src="img/pin_icon.png"></li>
-                        </ul>
-                    </div>
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="home">
-                            <br />
-                            <h5 class="content_header">Highlights</h5>
-                            <p class="highlights"><span class="glyphicon glyphicon-stop"></span>&nbsp;Drive a real V8 race car</p><br />
-                            <h5 class="content_header">What's included</h5>
-                            <ul class="includes">
-                                <li><span class="glyphicon glyphicon-stop"></span>&nbsp;You drive 6 laps (Total of 13.2KM's) around Wakefield Park Raceway</li>
-                                <li><span class="glyphicon glyphicon-stop"></span>&nbsp;Race suits and helmets will be provided</li>
-                                <li><span class="glyphicon glyphicon-stop"></span>&nbsp;Driver briefing is held before the race event</li>
-                                <li><span class="glyphicon glyphicon-stop"></span>&nbsp;Choice of Ford or Holden V8 race car</li>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Experience <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
                             </ul>
-                            <p class="content hidden-xs">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                            <br />
-                            <h5 class="content_header hidden-xs">Guidelines</h5>
-                            <p class="content hidden-xs">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                            <h5 class="content_header hidden-xs">Suitability</h5>
-                            <p class="content hidden-xs">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
-                        </div>
-                        <div class="tab-pane hidden-xs" id="info">test</div>
-                        <div class="tab-pane hidden-xs" id="menu">test</div>
-                        <div class="tab-pane hidden-xs" id="reviews">test</div>
-                        <div class="tab-pane hidden-xs" id="map">test</div>
-                    </div>
-
-                    <div class="why_choose hidden-xs">
-                            <img src="img/why_ch.jpg" alt="banner">
-                    </div>
-
-                <!-- Reviews section -->
-                <div class="reviews hidden-xs">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4>Heading</h4>
-                            <hr class="redline">
-                            <span class="glyphicon glyphicon-user"></span><span class="username">&nbsp;roker73&nbsp;</span> | &nbsp;<span class="user_info_title">From: </span><span class="user_info">Milperra, NSW&nbsp;|&nbsp; </span><span class="user_info_title">&nbsp;Age: </span><span class="user_info">54 to 64&nbsp; | </span><span class="user_info_title">&nbsp;Gender: </span> 
-                            <span class="user_info">Male&nbsp; | </span><span class="user_info_title">&nbsp;Thrill Seeking: </span>
-                            <span class="user_info">I like excitement</span>
-                            <hr class="review_dotted_line">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <div class="thumbnail pull-left">
-                                        <img src="img/ph_150.jpg" class="review_thumb">
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4 class="review_heading">Enjoyed every minute of it</h4>
-                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reiciendis nulla modi praesentium doloribus debitis nisi quo consequuntur excepturi fugit cumque eius voluptas dicta, porro facilis neque fuga cupiditate magnam</p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;<span class="username_comment">by roker73 (21 July 2013)</span>
-                                </div>
-                                <div class="col-md-3">
-                                    <p class="review_rating">QUALITY</p>
-                                    <p class="review_rating">VALUE</p>
-                                    <p class="review_rating">STAFF &amp; SERVICE</p>
-                                    <p class="review_rating">FUN FACTOR</p>
-                                </div>
-                            </div>       
-                        </div> 
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 review_row_gap">
-                            <hr class="review_divider">
-                            <span class="glyphicon glyphicon-user"></span><span class="username">&nbsp;roker73&nbsp;</span> | &nbsp;<span class="user_info_title">From: </span><span class="user_info">Milperra, NSW&nbsp;|&nbsp; </span><span class="user_info_title">&nbsp;Age: </span><span class="user_info">54 to 64&nbsp; | </span><span class="user_info_title">&nbsp;Gender: </span> 
-                            <span class="user_info">Male&nbsp; | </span><span class="user_info_title">&nbsp;Thrill Seeking: </span>
-                            <span class="user_info">I like excitement</span>
-                            <hr class="review_dotted_line">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <div class="thumbnail pull-left">
-                                        <img src="img/ph_150.jpg" class="review_thumb">
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4 class="review_heading">Enjoyed every minute of it</h4>
-                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reiciendis nulla modi praesentium doloribus debitis nisi quo consequuntur excepturi fugit cumque eius voluptas dicta, porro facilis neque fuga cupiditate magnam</p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;<span class="username_comment">by roker73 (21 July 2013)</span>
-                                </div>
-                                <div class="col-md-3">
-                                    <p class="review_rating">QUALITY</p>
-                                    <p class="review_rating">VALUE</p>
-                                    <p class="review_rating">STAFF &amp; SERVICE</p>
-                                    <p class="review_rating">FUN FACTOR</p>                                
-                                </div>
-                            </div>       
-                        </div> 
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 review_row_gap">
-                            <hr class="review_divider">
-                            <span class="glyphicon glyphicon-user"></span><span class="username">&nbsp;roker73&nbsp;</span> | &nbsp;<span class="user_info_title">From: </span><span class="user_info">Milperra, NSW&nbsp;|&nbsp; </span><span class="user_info_title">&nbsp;Age: </span><span class="user_info">54 to 64&nbsp; | </span><span class="user_info_title">&nbsp;Gender: </span> 
-                            <span class="user_info">Male&nbsp; | </span><span class="user_info_title">&nbsp;Thrill Seeking: </span>
-                            <span class="user_info">I like excitement</span>
-                            <hr class="review_dotted_line">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <div class="thumbnail pull-left">
-                                        <img src="img/ph_150.jpg" class="review_thumb">
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4 class="review_heading">Enjoyed every minute of it</h4>
-                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reiciendis nulla modi praesentium doloribus debitis nisi quo consequuntur excepturi fugit cumque eius voluptas dicta, porro facilis neque fuga cupiditate magnam</p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;<span class="username_comment">by roker73 (21 July 2013)</span>
-                                </div>
-                                <div class="col-md-3">
-                                    <p class="review_rating">QUALITY</p>
-                                    <p class="review_rating">VALUE</p>
-                                    <p class="review_rating">STAFF &amp; SERVICE</p>
-                                    <p class="review_rating">FUN FACTOR</p>                               
-                                </div>
-                            </div>       
-                        </div> 
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 review_row_gap">
-                            <hr class="review_divider">
-                            <span class="glyphicon glyphicon-user"></span><span class="username">&nbsp;roker73&nbsp;</span> | &nbsp;<span class="user_info_title">From: </span><span class="user_info">Milperra, NSW&nbsp;|&nbsp; </span><span class="user_info_title">&nbsp;Age: </span><span class="user_info">54 to 64&nbsp; | </span><span class="user_info_title">&nbsp;Gender: </span> 
-                            <span class="user_info">Male&nbsp; | </span><span class="user_info_title">&nbsp;Thrill Seeking: </span>
-                            <span class="user_info">I like excitement</span>
-                            <hr class="review_dotted_line">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <div class="thumbnail pull-left">
-                                        <img src="img/ph_150.jpg" class="review_thumb">
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4 class="review_heading">Enjoyed every minute of it</h4>
-                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reiciendis nulla modi praesentium doloribus debitis nisi quo consequuntur excepturi fugit cumque eius voluptas dicta, porro facilis neque fuga cupiditate magnam</p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;<span class="username_comment">by roker73 (21 July 2013)</span>
-                                </div>
-                                <div class="col-md-3">
-                                    <p class="review_rating">QUALITY</p>
-                                    <p class="review_rating">VALUE</p>
-                                    <p class="review_rating">STAFF &amp; SERVICE</p>
-                                    <p class="review_rating">FUN FACTOR</p>                               
-                                </div>
-                            </div>       
-                        </div> 
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 review_row_gap">
-                            <hr class="review_divider">
-                            <span class="glyphicon glyphicon-user"></span><span class="username">&nbsp;roker73&nbsp;</span> | &nbsp;<span class="user_info_title">From: </span><span class="user_info">Milperra, NSW&nbsp;|&nbsp; </span><span class="user_info_title">&nbsp;Age: </span><span class="user_info">54 to 64&nbsp; | </span><span class="user_info_title">&nbsp;Gender: </span> 
-                            <span class="user_info">Male&nbsp; | </span><span class="user_info_title">&nbsp;Thrill Seeking: </span>
-                            <span class="user_info">I like excitement</span>
-                            <hr class="review_dotted_line">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <div class="thumbnail pull-left">
-                                        <img src="img/ph_150.jpg" class="review_thumb">
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <h4 class="review_heading">Enjoyed every minute of it</h4>
-                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reiciendis nulla modi praesentium doloribus debitis nisi quo consequuntur excepturi fugit cumque eius voluptas dicta, porro facilis neque fuga cupiditate magnam</p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;<span class="username_comment">by roker73 (21 July 2013)</span>
-                                </div>
-                                <div class="col-md-3">
-                                    <p class="review_rating">QUALITY</p>
-                                    <p class="review_rating">VALUE</p>
-                                    <p class="review_rating">STAFF &amp; SERVICE</p>
-                                    <p class="review_rating">FUN FACTOR</p>                               
-                                </div>
-                            </div>       
-                        </div> 
-                    </div>
-                    <!-- Recently viewed -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <br />
-                            <h4>Recently Viewed</h4>
-                            <hr class="redline">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="thumbnail">
-                                        <img src="img/ph_150.jpg">
-                                        <p class="cap_text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
-                                        <p class="username_comment">Wakefield Park, Goulburn</p><br />
-                                        <p class="price">$199</p>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="thumbnail">
-                                        <img src="img/ph_150.jpg">
-                                        <p class="cap_text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
-                                        <p class="username_comment">Wakefield Park, Goulburn</p><br />
-                                        <p class="price">$199</p>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="thumbnail">
-                                        <img src="img/ph_150.jpg">
-                                        <p class="cap_text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
-                                        <p class="username_comment">Wakefield Park, Goulburn</p><br />
-                                        <p class="price">$199</p>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="thumbnail">
-                                        <img src="img/ph_150.jpg">
-                                        <p class="cap_text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
-                                        <p class="username_comment">Wakefield Park, Goulburn</p><br />
-                                        <p class="price">$199</p>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- Closes parent column div -->
-            </div> <!-- Closes parent row div -->
-
-
-            <!-- Right sidebar -->
-            <div class="col-md-3">
-                <div class="well hidden-xs">
-                    <h1 class="ex_price">$259</h1>
-                    <hr class="dotted_line">
-                    <p class="ex_info"><span class="glyphicon glyphicon-time"></span> 3 Hours <span class="glyphicon glyphicon-user"></span> 2 People</p>
-                    <hr class="dotted_line">
-                    <h5>Select Experience Date</h5>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Location <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipient <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Occasion <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Gift Certificates</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right" role="search">
                         <div class="form-group">
-                            <div class="input-group date" id="dp3" data-date="1-08-2014" data-date-format="dd-mm-yyyy">
-                              <input class="form-control" type="text" readonly="" value="choose date">
-                              <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn custom-search">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Corporate Orders</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+
+
+        <div class="container">            
+            <div class="row row-one">
+                <div class="col-lg-9 col-md-9 col-sm-8 clear">
+                    <img src="img/happydays.png">
+                </div>
+                <div class="col-lg-3 col-md-9 col-sm-4 clear">
+                    <div class="sidelinks">
+                        <h5 class="sidelinks-heading">New to RedBalloon?</h5>
+                        <p>How Experience Vouchers work<i class="glyphicon glyphicon-play"></i></p>
+                    </div>
+                    <div class="sidelinks">
+                        <h5 class="sidelinks-heading">Gift Certificates</h5>
+                        <p>Can't decide? Let them choose<i class="glyphicon glyphicon-play"></i></p>
+                    </div>
+                    <div class="sidelinks">
+                        <h5 class="sidelinks-heading">Newsletter Sign Up</h5>
+                        <p>Deals, new experiences &amp; more<i class="glyphicon glyphicon-play"></i></p>
+                    </div>
+                </div>
+            </div>
+                    
+            <div class='row row-two'>
+                <div class='col-md-12'>
+                    <h3 class="carousel-heading">Experience Gift Ideas</h3>
+                    <div class="carousel slide media-carousel" id="media">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="thumbnail"><a href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                            <a href="#"><p class="cap-heading">Romantic Getaways</p></a><p class="cap-price">From $50</p>
+                                        </div>
+                                    </div>          
+                                    <div class="col-md-3">
+                                        <div class="thumbnail"><a href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                            <a href="#"><p class="cap-heading">Sailing</p></a><p class="cap-price">From $200</p>
+                                        </div>
+                                    </div>
+                                      <div class="col-md-3">
+                                        <div class="thumbnail"><a href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                            <a href="#"><p class="cap-heading">Dine Out</p></a><p class="cap-price">From $75</p>
+                                        </div>
+                                    </div>        
+                                    <div class="col-md-3">
+                                        <div class="thumbnail"><a href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                            <a href="#"><p class="cap-heading">Flying</p></a><p class="cap-price">From $300</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="thumbnail"><a href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                            <a href="#"><p class="cap-heading">Romantic Getaways</p></a><p class="cap-price">From $50</p>
+                                        </div>
+                                    </div>          
+                                    <div class="col-md-3">
+                                        <div class="thumbnail"><a href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                            <a href="#"><p class="cap-heading">Sailing</p></a><p class="cap-price">From $200</p>
+                                        </div>
+                                    </div>
+                                      <div class="col-md-3">
+                                        <div class="thumbnail"><a href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                            <a href="#"><p class="cap-heading">Dine Out</p></a><p class="cap-price">From $75</p>
+                                        </div>
+                                    </div>        
+                                    <div class="col-md-3">
+                                        <div class="thumbnail"><a href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                            <a href="#"><p class="cap-heading">Flying</p></a><p class="cap-price">From $300</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="thumbnail"><a href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                            <a href="#"><p class="cap-heading">Romantic Getaways</p></a><p class="cap-price">From $50</p>
+                                        </div>
+                                    </div>          
+                                    <div class="col-md-3">
+                                        <div class="thumbnail"><a href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                            <a href="#"><p class="cap-heading">Sailing</p></a><p class="cap-price">From $200</p>
+                                        </div>
+                                    </div>
+                                      <div class="col-md-3">
+                                        <div class="thumbnail"><a href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                            <a href="#"><p class="cap-heading">Dine Out</p></a><p class="cap-price">From $75</p>
+                                        </div>
+                                    </div>        
+                                    <div class="col-md-3">
+                                        <div class="thumbnail"><a href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                            <a href="#"><p>Flying</p></a><p class="cap-price">From $300</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <h5>Quantity</h5>
-                            <select class="form-control quantity">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        <button type="button" class="btn btn-danger custom_book">Book a date</button><br />
-                        <span class="glyphicon glyphicon-ok-sign colour"></span> Low Price Guaranteed
+                        <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+                        <a data-slide="next" href="#media" class="right carousel-control">›</a>
+                    </div>                          
                 </div>
-                <div class="well hidden-xs">
-                    <p class="or" align="center"> OR </p>
-                    <p class="vouch_title">Buy an Experience Voucher</p>
-                    <p class="valid">valid for 12 months</p>
-                    <button type="button" class="btn btn-primary custom_vouch">Buy a voucher</button><br />
-                    <br /><span class="gg"><span class="glyphicon glyphicon-gift"></span> Gift Guarantee</span>
-                </div>
-                <div class="well">
-                    <h3 class="similar_ex">You Might Consider</h3>
-                    <div class="thumbnail_border">
-                        <img src="img/ph_150.jpg" alt="test">
-                            <div class="caption">
-                                <p class="cap_text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                                <strong>- $199</strong></p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <hr class="similar_ex_divider">
-                                <img src="img/ph_150.jpg" alt="test">
-                                <p class="cap_text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                                <strong>- $199</strong></p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <hr class="similar_ex_divider">
-                                <img src="img/ph_150.jpg" alt="test">
-                                <p class="cap_text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                                <strong>- $199</strong></p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <hr class="similar_ex_divider">
-                                <img src="img/ph_150.jpg" alt="test">
-                                <p class="cap_text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                                <strong>- $199</strong></p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
+            </div>
+
+            <div class="row row-three">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="gifts-heading">Gifts by Location</h3>
+                            <img src="img/map.jpg" class="map">
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="gifts-heading">Gifts by Occasion</h3>
+                            <ul class="occasion">
+                                <li><a href="#"><img src="img/icons/cake.png" class="gift-icons">Birthday Gifts</a></li>
+                                <li><a href="#"><img src="img/icons/calendar.png" class="gift-icons">Anniversary Gifts</a></li>
+                                <li><a href="#"><img src="img/icons/wedding.png" class="gift-icons">Wedding Gifts</a></li>
+                                <li><a href="#"><img src="img/icons/gift.png" class="gift-icons">30th Birthday Gifts</a></li>
+                                <li><a href="#"><img src="img/icons/glasses.png" class="gift-icons">Engagement Gifts</a></li>
+                                <li><a href="#"><img src="img/icons/xmas.png" class="gift-icons">Christmas Gifts</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                        <h3 class="gifts-heading">Gifts by Recipient</h3>
+                            <div class="recipient-area">
+                                <div class="recipient-thumb">
+                                    <a href="#"><img src="img/home-thumb01.jpg"></a>
+                                </div>
+                                <div class="recipient-content">
+                                    <h5 class="recipient-heading"><a href="#">Gifts for him</a></h5>
+                                    <p class="recipient-text">From racing to flying, get his heart pumping with these recommended experiences. Browse our gifts for him</p>
+                                    <p class="recipient-links"><a href="#">Men</a> | <a href="#">Dad</a> | <a href="#">Boyfriend</a> | <a href="#">Husband</a></p>
+                                </div>
+                            </div>
+                            <div class="recipient-area">
+                                <div class="recipient-thumb">
+                                    <img src="img/home-thumb02.jpg">
+                                </div>
+                                <div class="recipient-content">
+                                    <h5 class="recipient-heading"><a href="#">Gifts for her</a></h5>
+                                    <p class="recipient-text">She'll love an adventure, or maybe give her a voucher to get pampered? Find ideas for the perfect gift for her.</p>
+                                    <p class="recipient-links"><a href="#">Women</a> | <a href="#">Mum</a> | <a href="#">Girlfriend</a> | <a href="#">Wife</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </div> <!-- container -->
+            <div class="row row-two">
+                <div class="col-md-12">
+                    <h3 class="gifts-heading">About RedBalloon</h3>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="about-content">
+                                    <h5 class="cap-price">Australia &amp; New Zealand's leading experience gifts retailer</h5>
+                                    <p class="recipient-text">From giving someone an experience they've always wanted to do, to gift vouchers and an amazing array of vibrant gift boxes, you'll be sure to find the perfect present for any occasion. Buy your gifts online or in selected retail outlets.</p>
+                                    <h5 class="cap-price">Thousands of unique gift ideas &amp; experience gift vouchers</h5>
+                                    <p class="recipient-text">Gift a unique experience they will never forget. Select from our amazing range and no other gifts will come close. From hot air ballooning to romantic dinners, massage and even race driving. Whether you're looking for anniversary gifts or buying for someone's birthday, you'll find exciting gifts and unusual gifts that will be sure to impress.</p>
+                                    <h5 class="cap-price">Learn more about us:&nbsp;&nbsp;<span class="recipient-links"><a href="#">Read Our Blog</a> | <a href="#">Meet Our Founder</a> | <a href="#">RedBalloon for Corporate</a></span></h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                            </div>
+                        </div>
+                </div>
+            </div>
 
-    <footer class="bottom">
-        <div class="row">
-          <div class="col-xs-12 col-md-12 footer"></div>                  
-        </div>
-    </footer>
+            <div class="row row-two">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="subscribe">
+                            <div class="left-email">
+                                <h3 class="subscribe-heading">Subscribe to our Newsletter for great deals: </h3>
+                            </div>
+                            <div class="right-email">
+                                <input type="email" class="form-control" placeholder="Enter Email Address">
+                            </div>
+                                <p class="recipient-links">Past Newsletters | Privacy Policy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div> <!-- End of container -->
+
+
+
+
+
+
+
+        <footer class="bottom hidden-xs">
+            <div class="row hidden-xs">
+                <div class="col-lg-12 col-md-12 col-sm-12 footer">
+                    <div class="foot-links">
+                        <ul>
+                            <li><a href="#">Help</a></li>
+                            |
+                            <li><a href="#">Contact Us</a></li>
+                            |
+                            <li><a href="#">Careers</a></li>
+                            |
+                            <li><a href="#">Media Centre</a></li>
+                            |
+                            <li><a href="#">Newsletter</a></li>
+                            |
+                            <li><a href="#">Suppliers</a></li>
+                            |
+                            <li><a href="#">More</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-text">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>                  
+            </div>
+        </footer>
+
+<!-- ******************************************************************************************************************* -->
+<!-- *********************                               MOBILE SITE CODE                          ********************* -->
+<!-- ******************************************************************************************************************* -->
+
+
+   
 
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
     <script>
-        $(".input-group.date").datepicker({ autoclose: true, todayHighlight: true });        
+        $(document).ready(function() {
+            $('#media').carousel({
+                pause: true,
+                interval: false,
+            });
+        });
     </script>
-
-  </body>
+    </body>
 </html>
