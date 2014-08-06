@@ -23,13 +23,16 @@ img {
 
 /*Changes to glyphicons*/
 .glyphicon-play {
-    font-size: 2em;
-    padding-left: 10px;
-    margin-bottom: 15px;
+  font-size: 2em;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  color: #008acd;
 }
-
-.glyphicon {
-    color: #008acd;
+.glyphicon-search {
+  font-size: 1.4em;
+  color: #ffffff;
+  padding-top: 13px;
+  padding-right: 15px;
 }
 
 
@@ -123,6 +126,19 @@ img {
 .clear {
   padding: 0;
 }
+.sidelinks-mobile {
+  background-color: #eeeeee;
+  padding: 10px 5px 5px 10px;
+  margin-left: 5px;
+  margin-top: 3px;
+  margin-bottom: 15px;
+}
+.sidelinks-heading-mobile {
+  color: #ff3333;
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 5px;
+}
 
 /*ROW TWO*/
 .row-two {
@@ -130,7 +146,7 @@ img {
 }
 .carousel-heading {
   margin-bottom: -10px;
-  color: #666666;
+  color: #000000;
   font-weight: normal;
 }
 .thumbnail {
@@ -158,7 +174,7 @@ img {
 {
   left: -12px;
   background-image: none;
-  background: none repeat scroll 0 0 #222222;
+  background: none repeat scroll 0 0 #008acd;
   border: 4px solid #FFFFFF;
   border-radius: 23px 23px 23px 23px;
   height: 40px;
@@ -170,7 +186,7 @@ img {
 {
   right: -12px !important;
   background-image: none;
-  background: none repeat scroll 0 0 #222222;
+  background: none repeat scroll 0 0 #008acd;
   border: 4px solid #FFFFFF;
   border-radius: 23px 23px 23px 23px;
   height: 40px;
@@ -199,12 +215,7 @@ img {
   width: 250px;
   height: 100px
 }
-.carousel-inner {
-  border: 1px solid #eeeeee;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+
 /* End carousel */
 
 /*ROW THREE*/
@@ -236,7 +247,7 @@ Gifts by ocassion*/
   padding: 6px;
 }
 .gifts-heading {
-  color: #666666;
+  color: #000000;
   font-weight: normal;
 }
 /*COLUMN THREE*/
@@ -341,20 +352,21 @@ Gifts by ocassion*/
   font-weight: bold;
 }
 .foot-links-right ul {
-  /*padding-bottom: 0;*/
+  padding-bottom: 0;
   margin: 0;
+  margin-right: 40px;
+  margin-top: 5px;
   color: #ffffff; 
-  margin-left: 1130px;
-  margin-top: -30px;
 }
 .foot-links-right li {
   list-style-type: none;
   display: inline-block;
-  padding: 10px;
+  padding: 6px;
   padding-bottom: 0;
 }
 .foot-links-right li a {
   color: #ffffff;
+  text-transform: uppercase;
   font-size: 11px;
   font-weight: bold;
 }
