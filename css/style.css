@@ -7,6 +7,7 @@ body {
 .container { 
 	max-width: 960px; 
 	margin: 0 auto; 
+	margin-top: -20px;
 	background-color: #fff;
 }
 a { 
@@ -31,13 +32,21 @@ img {
   padding-left: 2px;
   color: #008acd;
 }
-.glyphicon-user {
+.glyphicon-user,
+.glyphicon-time {
   padding-left: 2px;
   font-size: 1.3em;
   color: #008acd;
 }
+.glyphicon-ok-sign,
+.glyphicon-gift, 
+.glyphicon-calendar {
+  padding-left: 2px;
+  font-size: 1em;
+  color: #008acd;
+}
 .glyphicon-stop {
-	font-size: 0.7em;
+	font-size: 0.8em;
 	color: #008acd;
 }
 .glyphicon-minus {
@@ -49,12 +58,13 @@ img {
   color: #008acd;
 }
 .glyphicon-heart, 
-.glyphicon-print, 
+.glyphicon-print,
+ .glyphicon-search,
 .glyphicon-envelope {
   font-size: 1.4em;
   color: #008acd;
 }
-.glyphicon-search {
+.glyphicon-search.mobile {
 	font-size: 1.4em;
 	color: #ffffff;
 	padding-top: 13px;
@@ -65,6 +75,9 @@ img {
 /*Header*/
 .navbar {
 	border-radius: 0;
+}
+.nav-tabs>li {
+	background-color: #eee;
 }
 .navbar-default.red-nav {
 	background-color: #ff3333;
@@ -136,6 +149,9 @@ img {
 	border-top: dotted 1px;
 	color: #CCCCCC;
 }
+.heading {
+	font-weight: normal;
+}
 /*Subtitle under product heading*/
 .subtitle {
 	color: #666666;
@@ -144,37 +160,35 @@ img {
 	margin-top: -6px;
 	margin-bottom: 16px;
 }
-
 .divider {
 	color: #666666;
 	font-size: 16px;
 }
-
 .rating {
 	padding-bottom: 4px;
 }
-
 .main-image {
 	padding-bottom: 20px;
 	display: block;
 	height: auto;
 	max-width: 100%;
 }
+.text-right {
+	color: #666;
+}
 
 
 /*For buttons on side*/
 /*Mobile first*/
 .custom-book {
-    width: 140px;
+    width: 172px;
     margin-top: 15px;
     margin-bottom: 10px;
-    margin-left: 15px;
     background-color: #ff3333;
     border-color: #ff3333;
 }
 .custom-vouch {
-    width: 140px;
-    margin-left: 15px;
+    width: 172px;
     margin-bottom: -5px;
     background-color: #008acd;
     border-color: #008acd;
@@ -187,14 +201,12 @@ img {
 
 /*Nav Tabs - Social Media*/
 .social-first {
-	margin-left: 102px;	
-	/*padding-right: 8px;*/
+	margin-left: 285px;	
 	margin-bottom: -50px;
 }
 .social {
 	margin-bottom: -50px;
-	/*padding-right: 8px;*/
-	margin-left: 160px;	
+	margin-left: 343px;	
 }
 .social-last {
 	margin-left: 258px;	
@@ -205,18 +217,18 @@ img {
 }
 .highlights {
 	list-style-type: none;
-	font-size: 12px;
+	font-size: 14px;
 	color: #666666;
 }
 .includes {
 	list-style-type: none;
-	font-size: 12px;
+	font-size: 14px;
 	color: #666666;
 	margin-left: -40px;
 	line-height: 24px;
 }
 .content {
-	font-size: 12px;
+	font-size: 14px;
 	color: #666666;
 	padding-top: 2px;
 }
@@ -256,7 +268,6 @@ img {
 	font-size: 12px;
 }
 .username-comment {
-	font-style: italic;
 	font-size: 11px;
 	color: #999999;
 }
@@ -287,14 +298,24 @@ img {
 }
 
 /*Recently viewed*/
-.price {
+.price-sale {
 	margin-top: -10px;
 	margin-bottom: 0;
 	font-weight: bold;
 	font-size: 16px;
 	color: #ff3333;
 }
-
+.price {
+	margin-top: -10px;
+	margin-bottom: 0;
+	font-weight: bold;
+	font-size: 16px;
+	color: #666;
+}
+.location {
+	font-size: 11px;
+	color: #999999;
+}
 
 /*======RIGHT SIDEBAR======*/
 /*Right sidebar changes*/
@@ -365,7 +386,6 @@ img {
 .bottom {
   background-color: #aaaaaa;
   height: 45px;
-  margin-top: 60px;
 }
 .foot-links-left ul {
   padding-bottom: 0;
@@ -389,7 +409,7 @@ img {
   /*padding-bottom: 0;*/
   margin: 0;
   color: #ffffff; 
-  margin-left: 1130px;
+  margin-left: 1060px;
   margin-top: -30px;
 }
 .foot-links-right li {
@@ -415,38 +435,42 @@ img {
 	background-color: #ff3333;
 	height: 70px;
 }
+.image-mobile {
+	margin-bottom: -39px;
+}
 img.main-image-mobile {
 	display: block;
 	height: auto;
 	max-width: 100%;
+	margin-top: -20px;
 }
 /*Condensed Info*/
 .review-stars {
-	padding: 5px 0 5px 10px;
+	padding: 15px 0 5px 0px;
 }
 .price-small {
-	color: #000;
-	background-color: #ddd;
+	color: #333;
 	font-weight: bold;
-	font-size: 1.5em;
-	padding: 7px 12px 7px 45px;
-	margin-left: 62px;
+	font-size: 36px;
+	margin-top: -10px;
 }
 .added-info {
 	margin-top: 15px;
 	margin-bottom: 5px;
 }
 .side-pad {
-	padding-left: 25px;
+	padding-left: 10px;
 }
 
-/*Main Content*/
+/*Title*/
 .heading-mobile {
-	margin-top: 10px;
+	margin-top: 25px;
 }
 .subtitle-mobile {
 	padding-top: 5px;
+	padding-left: 1px;
 }
+/*Main Content*/
 .venue-header {
 	margin-bottom: 5px;
 }
@@ -461,17 +485,21 @@ img.main-image-mobile {
 	margin-left: -40px;
 	line-height: 18px;
 }
+.added-info {
+	margin-bottom: 20px;
+}
 .includes-mobile {
 	list-style-type: none;
-	font-size: 12px;
+	font-size: 14px;
 	color: #666666;
 	margin-left: -40px;
 	line-height: 22px;
 }
 .content-mobile {
-	font-size: 12px;
+	font-size: 14px;
 	color: #666666;
-	text-align: justify;
+	/*text-align: justify;*/
+	margin-bottom: 25px;
 }
 
 /*Might consider*/
@@ -487,16 +515,16 @@ img.main-image-mobile {
 /*Sticky Footer = Call to action buttons*/
 
 .custom-book-mobile {
-    width: 140px;
+    width: 40%;
     margin-top: 15px;
     margin-bottom: 10px;
-    margin-left: 40px;
+    margin-left: 20px;
     background-color: #ff3333;
     border-color: #ff3333;
 }
 .custom-vouch-mobile {
-    width: 140px;
-    margin-left: 25px;
+    width: 40%;
+    margin-left: 40px;
     margin-bottom: -5px;
     background-color: #008acd;
     border-color: #008acd;

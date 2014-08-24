@@ -9,13 +9,14 @@
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- <link href="css/bootstrap-responsive.css" rel="stylesheet"> -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="less/style.css" rel="stylesheet">
         <link href="css/datepicker.css" rel="stylesheet">
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -35,7 +36,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <i class="glyphicon glyphicon-search pull-right hidden-lg hidden-md"></i>
+                    <i class="glyphicon glyphicon-search mobile pull-right hidden-lg hidden-md"></i>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -43,8 +44,8 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Experience <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
+                                <li><a href="product.html">Product Page Proto</a></li>
+                                <li><a href="category.html">Category Page Proto</a></li>
                                 <li><a href="#">Something else here</a></li>
                                 <li class="divider"></li>
                                 <li><a href="#">Separated link</a></li>
@@ -108,10 +109,11 @@
                 <div class="row hidden-xs">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <ul class="breadcrumb">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Driving Experiences</a></li>
-                            <li><a href="#">V8 Experiences</a></li>
-                            <li class="current">V8 Race Car Driving 4 Laps</li>
+                            <i class="glyphicon glyphicon-home"></i>
+                            <li><a href="#">GIFTS HOME</a></li>
+                            <li><a href="#">DRIVING EXPERIENCE</a></li>
+                            <li><a href="#">V8 EXPERIENCES</a></li>
+                            <li class="current-prod">V8 Race Car Driving 4 Laps</li>
                         </ul>
                     <hr class="dotted-line">
                     </div>  
@@ -133,7 +135,11 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-5">
                         <div class="wishlist pull-right">  
-                            <i class="glyphicon glyphicon-heart"></i><a href="#">&nbsp;Add to my wishlist&nbsp;</a><span class="divider">&nbsp;|&nbsp;</span><i class="glyphicon glyphicon-print"></i> <i class="glyphicon glyphicon-envelope"></i>
+                            <span class="heartIcon"><i class="glyphicon glyphicon-heart"></i></span>
+                            <a href="#" class="wishlist">&nbsp;Add to my wishlist&nbsp;</a>
+                            <span class="greyDividerIcon"></span>
+                            <span class="printIcon"></span><i class="fa fa-print"></i></span>
+                            <span class="emailIcon"></span><i class="fa fa-envelope"></i></span>
                         </div>
                     </div>
                 </div>
@@ -141,7 +147,7 @@
 
             <div class="row hidden-xs">
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    <hr style="height:1px;border:none;color:#333;background-color:#CCCCCC;" class="line">
+                    <hr class="line">
                 </div>
             </div>
 
@@ -153,11 +159,12 @@
                       <i class="glyphicon glyphicon-star"></i>
                       <i class="glyphicon glyphicon-star"></i>
                       <i class="glyphicon glyphicon-star"></i>
+                      &nbsp;&nbsp;
                       <i class="glyphicon glyphicon-search"></i>
                       <span class="divider">&nbsp;|&nbsp;</span>
-                      <a href="#">&nbsp;Read all reviews&nbsp;</a>
+                      <a href="#">&nbsp;Read all 225 Reviews&nbsp;</a>
                       <span class="divider">&nbsp;|&nbsp;</span> 
-                      <a href="#">&nbsp;Write a review&nbsp;</a>
+                      <a href="#">&nbsp;Write A Review&nbsp;</a>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-4">
                       <strong><p class="text-right">CODE: VRE450</p></strong>
@@ -177,7 +184,6 @@
                             <li><a href="#reviews" data-toggle="tab">Reviews</a></li>
                             <li><img class="social-first hidden-sm" src="img/fb_icon.png"></li>
                             <li><img class="social hidden-sm" src="img/fbshare_icon.png"></li>
-                            <li><img class="social-last hidden-sm" src="img/pin_icon.png"></li>
                         </ul>
                     </div>
                     <!-- Tab panes -->
@@ -375,9 +381,22 @@
                             <div class="row">
                                 <div class="col-lg-3 col-md-3 col-sm-4">
                                     <div class="thumbnail">
-                                        <img src="img/ph_150.jpg">
+                                        <img src="img/viewed01.jpg">
                                         <p class="cap-text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
-                                        <p class="username_comment">Wakefield Park, Goulburn</p><br />
+                                        <p class="location">Wakefield Park, Goulburn</p><br />
+                                        <p class="price-sale">$199</p>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-4">
+                                    <div class="thumbnail">
+                                        <img src="img/viewed01.jpg">
+                                        <p class="cap-text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
+                                        <p class="location">Wakefield Park, Goulburn</p><br />
                                         <p class="price">$199</p>
                                         <i class="glyphicon glyphicon-star"></i>
                                         <i class="glyphicon glyphicon-star"></i>
@@ -388,23 +407,10 @@
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-4">
                                     <div class="thumbnail">
-                                        <img src="img/ph_150.jpg">
+                                        <img src="img/viewed01.jpg">
                                         <p class="cap-text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
-                                        <p class="username_comment">Wakefield Park, Goulburn</p><br />
-                                        <p class="price">$199</p>
-                                        <i class="glyphicon glyphicon-star"></i>
-                                        <i class="glyphicon glyphicon-star"></i>
-                                        <i class="glyphicon glyphicon-star"></i>
-                                        <i class="glyphicon glyphicon-star"></i>
-                                        <i class="glyphicon glyphicon-star"></i>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-4">
-                                    <div class="thumbnail">
-                                        <img src="img/ph_150.jpg">
-                                        <p class="cap-text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
-                                        <p class="username_comment">Wakefield Park, Goulburn</p><br />
-                                        <p class="price">$199</p>
+                                        <p class="location">Wakefield Park, Goulburn</p><br />
+                                        <p class="price">$399</p>
                                         <i class="glyphicon glyphicon-star"></i>
                                         <i class="glyphicon glyphicon-star"></i>
                                         <i class="glyphicon glyphicon-star"></i>
@@ -414,10 +420,10 @@
                                 </div>
                                 <div class="col-lg-3 col-md-3 hidden-sm">
                                     <div class="thumbnail">
-                                        <img src="img/ph_150.jpg">
+                                        <img src="img/viewed01.jpg">
                                         <p class="cap-text"><strong>V8 Race Car Ride - Front Seat Wakefield Park, NSW</strong></p>
-                                        <p class="username_comment">Wakefield Park, Goulburn</p><br />
-                                        <p class="price">$199</p>
+                                        <p class="location">Wakefield Park, Goulburn</p><br />
+                                        <p class="price-sale">$150</p>
                                         <i class="glyphicon glyphicon-star"></i>
                                         <i class="glyphicon glyphicon-star"></i>
                                         <i class="glyphicon glyphicon-star"></i>
@@ -467,7 +473,7 @@
                 <div class="well hidden-xs">
                     <h3 class="similar-ex">You Might Consider</h3>
                     <div class="thumbnail-border">
-                        <img src="img/ph_150.jpg" alt="test">
+                        <img src="img/consider01.jpg" alt="test" class="consider-pic">
                             <div class="caption">
                                 <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
                                 <strong>- $199</strong></p>
@@ -477,7 +483,16 @@
                                 <i class="glyphicon glyphicon-star"></i>
                                 <i class="glyphicon glyphicon-star"></i>
                                 <hr class="similar-ex-divider">
-                                <img src="img/ph_150.jpg" alt="test">
+                                <img src="img/consider02.jpg" alt="test" class="consider-pic">
+                                <p class="cap-text">V8 Racing Drive and Ride 9 Lap Combo Package
+                                <strong>- $449</strong></p>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <hr class="similar-ex-divider">
+                                <img src="img/consider03.jpg" alt="test" class="consider-pic">
                                 <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
                                 <strong>- $199</strong></p>
                                 <i class="glyphicon glyphicon-star"></i>
@@ -486,18 +501,9 @@
                                 <i class="glyphicon glyphicon-star"></i>
                                 <i class="glyphicon glyphicon-star"></i>
                                 <hr class="similar-ex-divider">
-                                <img src="img/ph_150.jpg" alt="test">
-                                <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                                <strong>- $199</strong></p>
-                                <i class="glyphicon glyphicon-star"></i>
-                                <i class="glyphicon glyphicon-star"></i>
-                                <i class="glyphicon glyphicon-star"></i>
-                                <i class="glyphicon glyphicon-star"></i>
-                                <i class="glyphicon glyphicon-star"></i>
-                                <hr class="similar-ex-divider">
-                                <img src="img/ph_150.jpg" alt="test">
-                                <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                                <strong>- $199</strong></p>
+                                <img src="img/consider04.jpg" alt="test" class="consider-pic">
+                                <p class="cap-text">Meat BBQ Cooking Class
+                                <strong>- $120</strong></p>
                                 <i class="glyphicon glyphicon-star"></i>
                                 <i class="glyphicon glyphicon-star"></i>
                                 <i class="glyphicon glyphicon-star"></i>
@@ -544,30 +550,29 @@
             </div>
         </footer>
 
+        <div class="bottom-space"></div>
+
 <!-- ******************************************************************************************************************* -->
 <!-- *********************                               MOBILE SITE CODE                          ********************* -->
 <!-- ******************************************************************************************************************* -->
-    <div class="row hidden-sm hidden-md hidden-lg">
-        <div class="col-xs-12">
+    <div class="row hidden-sm hidden-md hidden-lg">  
+        <div class="hidden-sm hidden-md hidden-lg col-xs-12">
                 <img src="img/test01.jpg" class="main-image-mobile">
         </div>
     </div>
         
     <div id="condensed-info">
-        <div class="row hidden-sm hidden-md hidden-lg">
-            <div class="col-xs-12">
-                <div class="review-stars">
-                    <i class="glyphicon glyphicon-star"></i>
-                    <i class="glyphicon glyphicon-star"></i>
-                    <i class="glyphicon glyphicon-star"></i>
-                    <i class="glyphicon glyphicon-star"></i>
-                    <i class="glyphicon glyphicon-star"></i>
-                    <a href="#">&nbsp;Read all reviews&nbsp;</a>
-                    <span class="price-small">$259</span>
-                    <div class="added-info">
-                        <i class="glyphicon glyphicon-time"></i>&nbsp;&nbsp;3 Hours&nbsp;
-                        <span class="side-pad"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;2 People&nbsp;</span>
-                        <span class="side-pad"><i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;Check availability</span>
+        <div class="container hidden-sm hidden-md hidden-lg">  
+            <div class="row hidden-sm hidden-md hidden-lg">
+                <div class="col-xs-12">
+                    <div class="review-stars">
+                        <i class="glyphicon glyphicon-star"></i>
+                        <i class="glyphicon glyphicon-star"></i>
+                        <i class="glyphicon glyphicon-star"></i>
+                        <i class="glyphicon glyphicon-star"></i>
+                        <i class="glyphicon glyphicon-star"></i>                        
+                        <a href="#">&nbsp;Read all reviews&nbsp;</a>
+                        <p class="price-small pull-right">$259</p>
                     </div>
                 </div>
             </div>
@@ -575,106 +580,117 @@
     </div>
     
     <div class="container hidden-sm hidden-md hidden-lg">   
-    <div class="row hidden-sm hidden-md hidden-lg"> 
-        <div class="col-xs-12">
-            <footer class="navbar-default navbar-fixed-bottom">
-                    <button type="button" class="btn btn-danger custom-book-mobile">Book a date</button>
-                    <button type="button" class="btn btn-primary custom-vouch-mobile">Buy a voucher</button>
-            </footer>
+        <div class="row hidden-sm hidden-md hidden-lg"> 
+            <div class="col-xs-12">
+                <footer class="navbar-default navbar-fixed-bottom">
+                        <button type="button" class="btn btn-danger custom-book-mobile">Book a date</button>
+                        <button type="button" class="btn btn-primary custom-vouch-mobile">Buy a voucher</button>
+                </footer>
+            </div>
         </div>
     </div>
 
     <div id="title">
+        <div class="container hidden-sm hidden-md hidden-lg">   
         <div class="row hidden-sm hidden-md hidden-lg">
             <div class="col-xs-12">
             <h3 class="heading-mobile">V8 Race Car Driving - 4 Laps<small>
             <p class ="subtitle-mobile">VIC, SA &amp; WA</p></small></h3>
+                <div class="added-info">
+                    <i class="glyphicon glyphicon-time"></i>&nbsp;&nbsp;3 Hours&nbsp;
+                    <span class="side-pad"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;2 People&nbsp;</span>
+                    <span class="side-pad"><i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;Check availability</span>
+                </div>
             </div>
         </div>
     </div>
 
     <div id="main-content">
-        <div class="row hidden-sm hidden-md hidden-lg">
-            <div class="col-xs-12">
-                <h5 class="venue-header">Venue</h5>
-                <ul class="venue">
-                    <li>VIC - Sandown Raceway&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SA - Mallala Motorsport Park</li>
-                    <li>WA - Barbagallo Raceway</li>
-                </ul>
-                <h5 class="content-header-mobile">What's included</h5>
-                <ul class="includes-mobile">
-                    <li><i class="glyphicon glyphicon-stop"></i>&nbsp;You drive 4 laps</li>
-                    <li><i class="glyphicon glyphicon-stop"></i>&nbsp;Race suits and helmets will be provided</li>
-                    <li><i class="glyphicon glyphicon-stop"></i>&nbsp;Driver briefing is held before the race event</li>
-                    <li><i class="glyphicon glyphicon-stop"></i>&nbsp;Choice of Ford or Holden V8 race car</li>
-                </ul>
-                <h5 class="content-header-mobile">Restrictions</h5>
-                <ul class="includes-mobile">
-                    <li><i class="glyphicon glyphicon-stop"></i>&nbsp;You need to be 18 and have at least your P's</li>
-                    <li><i class="glyphicon glyphicon-stop"></i>&nbsp;All participants must be drug and alcohol</li>
-                    <li><i class="glyphicon glyphicon-stop"></i>&nbsp;Maximum weight of 130kgs</li>
-                </ul>
-                <h5 class="content-header-mobile">Session Length</h5>
-                <ul class="includes-mobile">
-                    <li><i class="glyphicon glyphicon-stop"></i>&nbsp;This is a 2-3 hour event including the briefing and driving</li>
-                    <li><i class="glyphicon glyphicon-stop"></i>&nbsp;There are set race dates during the year, 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;please check calendar for availability</p></li>
-                </ul>
-                <p class="content-mobile">Your V8 race car drive day begins as you register at the reception prior to your pre-drive tuition. This will prepare you for driving a race prepared V8 race car with information on handling the car, cornering, braking and the track map. Then it's time to suit up! Put on your professional helmet and hook up for discussion with your in-car instructor. You'll be fitted into your race suit and you'll feel the anticipation rise as other cars zoom by. Prior to your drive, you'll be asked whether you would prefer to drive a Ford or Holden. You are then strapped in behind the wheel, introduced to your personal in-car coach and off you go for your drive of a lifetime! Through your intercom, your in-car coach will talk you through advanced gear changes and brake points so that you can drive fast and safely. You will be able to drive on a fantastic circuit with long straights, thrilling undulations and challenging cornering. There's no limits on speed, so if someone on the track is lagging you're encouraged to boot it right past them. You can choose to purchase a Super Photo Souvenir and In-Car digital video recording with telemetry on a USB stick on the day for $49 each.
-                </p>
+        <div class="container hidden-sm hidden-md hidden-lg">  
+            <div class="row hidden-sm hidden-md hidden-lg">
+                <div class="col-xs-12">
+                    <h5 class="venue-header">Venue</h5>
+                    <ul class="venue">
+                        <li>VIC - Sandown Raceway&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SA - Mallala Motorsport Park</li>
+                        <li>WA - Barbagallo Raceway</li>
+                    </ul>
+                    <h5 class="content-header-mobile">What's included</h5>
+                    <ul class="includes-mobile">
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;You drive 4 laps</li>
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;Race suits and helmets will be provided</li>
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;Driver briefing is held before the race event</li>
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;Choice of Ford or Holden V8 race car</li>
+                    </ul>
+                    <h5 class="content-header-mobile">Restrictions</h5>
+                    <ul class="includes-mobile">
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;You need to be 18 and have at least your P's</li>
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;All participants must be drug and alcohol</li>
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;Maximum weight of 130kgs</li>
+                    </ul>
+                    <h5 class="content-header-mobile">Session Length</h5>
+                    <ul class="includes-mobile">
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;This is a 2-3 hour event including the briefing and driving</li>
+                        <li><i class="glyphicon glyphicon-stop"></i>&nbsp;There are set race dates during the year, 
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;please check calendar for availability</p></li>
+                    </ul>
+                    <p class="content-mobile">Your V8 race car drive day begins as you register at the reception prior to your pre-drive tuition. This will prepare you for driving a race prepared V8 race car with information on handling the car, cornering, braking and the track map. Then it's time to suit up! Put on your professional helmet and hook up for discussion with your in-car instructor. You'll be fitted into your race suit and you'll feel the anticipation rise as other cars zoom by. Prior to your drive, you'll be asked whether you would prefer to drive a Ford or Holden. You are then strapped in behind the wheel, introduced to your personal in-car coach and off you go for your drive of a lifetime! Through your intercom, your in-car coach will talk you through advanced gear changes and brake points so that you can drive fast and safely. You will be able to drive on a fantastic circuit with long straights, thrilling undulations and challenging cornering. There's no limits on speed, so if someone on the track is lagging you're encouraged to boot it right past them. You can choose to purchase a Super Photo Souvenir and In-Car digital video recording with telemetry on a USB stick on the day for $49 each.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 
     <div id="might-consider">
-        <div class="row hidden-sm hidden-md hidden-lg">
-            <div class="col-xs-12">
-                <h4>You Might Consider</h4>
-                <div class="well">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <div class="thumbnail-border">
-                                <img src="img/ph_150.jpg" alt="test">
-                                <div class="caption">
-                                    <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                                    <strong>- $199</strong></p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <hr class="similar-ex-divider">
+        <div class="container hidden-sm hidden-md hidden-lg">  
+            <div class="row hidden-sm hidden-md hidden-lg">
+                <div class="col-xs-12">
+                    <h4>You Might Consider</h4>
+                    <div class="well">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="thumbnail-border">
                                     <img src="img/ph_150.jpg" alt="test">
-                                    <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                                    <strong>- $199</strong></p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
+                                    <div class="caption">
+                                        <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                        <strong>- $199</strong></p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <hr class="similar-ex-divider">
+                                        <img src="img/ph_150.jpg" alt="test">
+                                        <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                        <strong>- $199</strong></p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="thumbnail-border">
-                                <img src="img/ph_150.jpg" alt="test">
-                                <div class="caption">
-                                    <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                                    <strong>- $199</strong></p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <hr class="similar-ex-divider">
+                            <div class="col-xs-6">
+                                <div class="thumbnail-border">
                                     <img src="img/ph_150.jpg" alt="test">
-                                    <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                                    <strong>- $199</strong></p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
+                                    <div class="caption">
+                                        <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                        <strong>- $199</strong></p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <hr class="similar-ex-divider">
+                                        <img src="img/ph_150.jpg" alt="test">
+                                        <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                        <strong>- $199</strong></p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -685,54 +701,56 @@
     </div>
 
     <div id="recent-view">
-        <div class="row hidden-sm hidden-md hidden-lg">
-            <div class="col-xs-12">
-                <h4>Recently Viewed</h4>
-                <div class="well">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <div class="thumbnail-border">
-                                <img src="img/ph_150.jpg" alt="test">
-                                <div class="caption">
-                                    <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                                    <strong>- $199</strong></p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <hr class="similar-ex-divider">
+        <div class="container hidden-sm hidden-md hidden-lg">  
+            <div class="row hidden-sm hidden-md hidden-lg">
+                <div class="col-xs-12">
+                    <h4>Recently Viewed</h4>
+                    <div class="well">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="thumbnail-border">
                                     <img src="img/ph_150.jpg" alt="test">
-                                    <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                                    <strong>- $199</strong></p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
+                                    <div class="caption">
+                                        <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                        <strong>- $199</strong></p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <hr class="similar-ex-divider">
+                                        <img src="img/ph_150.jpg" alt="test">
+                                        <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                        <strong>- $199</strong></p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="thumbnail-border">
-                                <img src="img/ph_150.jpg" alt="test">
-                                <div class="caption">
-                                    <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                                    <strong>- $199</strong></p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <hr class="similar-ex-divider">
+                            <div class="col-xs-6">
+                                <div class="thumbnail-border">
                                     <img src="img/ph_150.jpg" alt="test">
-                                    <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
-                                    <strong>- $199</strong></p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
+                                    <div class="caption">
+                                        <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                        <strong>- $199</strong></p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <hr class="similar-ex-divider">
+                                        <img src="img/ph_150.jpg" alt="test">
+                                        <p class="cap-text">V8 Race Car Ride - Front Seat Wakefield Park, NSW
+                                        <strong>- $199</strong></p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -747,6 +765,7 @@
     </div>
 
     </div> <!-- End of container -->
+
 
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
