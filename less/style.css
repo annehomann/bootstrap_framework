@@ -272,16 +272,17 @@ a.wishlist {
   font-size: 14px;
   font-weight: bold;
 }
-.highlights {
-  list-style-type: none;
+.highlights li {
+  list-style-image: url(../img/icon-bullet.png);
   font-size: 14px;
+  margin-left: -25px;
   color: #666666;
 }
-.includes {
-  list-style-type: none;
+.includes li {
+  list-style-image: url(../img/icon-bullet.png);
   font-size: 14px;
   color: #666666;
-  margin-left: -40px;
+  margin-left: -25px;
   line-height: 24px;
 }
 .content {
@@ -379,10 +380,35 @@ a.wishlist {
   margin-bottom: -10px;
   font-size: 40px;
   font-weight: bold;
+  color: #666;
 }
-.ex-info {
-  margin-top: -10px;
-  margin-bottom: -10px;
+.productSnapshot {
+  vertical-align: middle;
+  margin-top: -8px;
+}
+.snapshotText {
+  font-size: 12px;
+  color: #666;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.durationIcon {
+  background: url(../img/icon-timeDuration.png) top left no-repeat;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  width: 13px;
+  height: 16px;
+  margin-right: 3px;
+}
+.onePersonIcon {
+  background: url(../img/icon-onePerson.png) top left no-repeat;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  width: 14px;
+  height: 16px;
+  margin-right: 3px;
 }
 .quantity {
   width: 30%;
