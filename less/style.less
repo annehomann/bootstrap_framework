@@ -28,23 +28,44 @@ img {
     color: #aaaaaa;
 }
 .glyphicon-heart {
-    font-size: 1.6em;
+    font-size: 1em;
+    opacity: 0.4;
     padding-right: 5px;
     color: @redballoonBlue;
 }
+.glyphicon-heart.mobile {
+    font-size: 1.7em;
+    opacity: 0.9;
+    padding-right: 5px;
+    color: #fff;
+}
 .fa-print {
-    font-size: 1.4em;
-    padding-left: 5px;
+    font-size: 1.2em;
+    padding-left: 2px;
     color: @redballoonBlue;
 }
 .fa-envelope {
-    font-size: 1.4em;
-    padding-left: 2px;
+    font-size: 1.2em;
     color: @redballoonBlue;
 }
-.glyphicon-ok-sign,.glyphicon-gift,.glyphicon-calendar {
+.glyphicon-user,.glyphicon-time {
+    padding-left: 2px;
+    font-size: 1.3em;
+    color: @redballoonBlue;
+}
+.glyphicon-user.mobile,.glyphicon-time.mobile, 
+.glyphicon-calendar.mobile {
+    padding-left: 2px;
+    font-size: 0.9em;
+    color: @redballoonBlue;
+}
+.glyphicon-gift,.glyphicon-calendar {
     padding-left: 2px;
     font-size: 1em;
+    color: @redballoonBlue;
+}
+.glyphicon-stop {
+    font-size: 0.8em;
     color: @redballoonBlue;
 }
 .glyphicon-minus {
@@ -55,23 +76,34 @@ img {
     font-size: 1.2em;
     color: @redballoonBlue;
 }
-.glyphicon-print,.glyphicon-envelope {
-    font-size: 1.4em;
+.fa-star.star-mobile {
+    font-size: 1em;
     color: @redballoonBlue;
-    text-align: center;
-    vertical-align: middle;
 }
-.glyphicon-search {
-    font-size: 1.2em;
-    color: @redballoonBlue;    
-    margin-left: -7px;
-    margin-right: 10px;
+.fa-search {
+    font-size: 1.3em;
+    color: @redballoonBlue;
 }
 .glyphicon-search.mobile {
     font-size: 1.4em;
     color: #ffffff;
     padding-top: 13px;
     padding-right: 15px;
+}
+.fa-stack {
+    display: inline-block;
+    font-size: 0.8em;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.fa-certificate {
+    color: @redballoonBlue;
+}
+.fa-check {
+    color: #f3f3f3;
 }
 .navbar {
     border-radius: 0;
@@ -185,10 +217,9 @@ li.current-prod {
     margin-top: -2px;
     margin-bottom: 12px;
 }
-// .divider {
-//     color: #666666;
-//     font-size: 16px;
-// }
+.divider {
+    color: #eee;
+}
 .rating {
     padding-bottom: 4px;
 }
@@ -220,16 +251,27 @@ li.current-prod {
     height: 22px;
     padding-right: 5px;
 }
-a.wishlist {
+.wishlist a {
     font-size: 12px;
     font-weight: normal;
     padding-right: 5px;
+}
+.wishlist a:hover {
+    color: @redballoonBlue;
+}
+.wishlist.glyphicon-heart a:hover {
+    color: @redballoonBlue;
+    opacity: 0;   
 }
 .line {
     height: 1px;
     border: none;
     color: #333;
     background-color: #ccc;
+}
+.review-links {
+    vertical-align: middle;
+    font-size: 12px;
 }
 .main-image {
     padding-bottom: 20px;
@@ -272,18 +314,20 @@ a.wishlist {
     font-size: 14px;
     font-weight: bold;
 }
-.highlights li {
-    list-style-image: url(../img/icon-bullet.png);
+.highlights {
+    list-style-type: none;
     font-size: 14px;
-    margin-left: -25px;
     color: #666666;
+}
+.includes {
+    padding-left: 16px;
 }
 .includes li {
     list-style-image: url(../img/icon-bullet.png);
     font-size: 14px;
+    line-height: 18px;
+    padding: 0 0 5px 0;
     color: #666666;
-    margin-left: -25px;
-    line-height: 24px;
 }
 .content {
     font-size: 13px;
@@ -354,14 +398,14 @@ a.wishlist {
     margin-bottom: 0;
     font-weight: bold;
     font-size: 16px;
-    color: #ff3333;
+    color: @brand-color;
 }
 .price {
     margin-top: -10px;
     margin-bottom: 0;
     font-weight: bold;
     font-size: 16px;
-    color: @redballoonBlue;
+    color: #666;
 }
 .location {
     font-size: 11px;
@@ -369,68 +413,120 @@ a.wishlist {
 }
 .well {
     border-radius: 0;
-    border-style: solid;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    border-top-width: 2px;
+    border: none;
 }
 .ex-price {
     margin-top: -6px;
-    margin-bottom: -10px;
+    margin-bottom: 10px;
     font-size: 40px;
     font-weight: bold;
-    color: #666;
+    color: #555;
 }
-.productSnapshot {
-    vertical-align: middle;
-    margin-top: -8px;
-}
-.snapshotText {
-    font-size: 12px;
-    color: #666;
-    vertical-align: middle;
-    margin-right: 8px;
+.product-snapshot {
+    margin-top: -12px;
+    margin-bottom: -5px;
 }
 .durationIcon {
-    background: url(../img/icon-timeDuration.png) top left no-repeat; 
+    background: url(../img/icon-timeDuration.png) top left no-repeat;
     text-align: center;
     vertical-align: middle;
     display: inline-block;
     width: 13px;
     height: 16px;
-    margin-right: 3px;
-}  
+}
 .onePersonIcon {
-    background: url(../img/icon-onePerson.png) top left no-repeat; 
+    background: url(../img/icon-onePerson.png) top left no-repeat;
     text-align: center;
     vertical-align: middle;
     display: inline-block;
     width: 14px;
     height: 16px;
-    margin-right: 3px;
-}   
-// .ex-info {
-//     margin-top: -10px;
-//     margin-bottom: -10px;
-// }
+}
+.snapshotText {
+    font-size: 12px;
+    color: #666;
+    vertical-align: middle;
+    padding: 0 13px 0 6px;
+}
 .quantity {
     width: 30%;
     height: 28px;
 }
+.quantity-tooltip {
+    color: #999;
+    background-color: #fff;
+    border: 1px solid #b4b4b4;
+    border-radius: 16px;
+    cursor: default;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+}
+.tooltip-position {
+    position: absolute;
+    top: 186px;
+    right: 125px;
+}
 .gg {
     margin-left: 30px;
 }
-.or {
-    color: #666666;
+.gift-guarantee {
+    padding-top: 15px;
+    padding-left: 35px;
+}
+.guarantee {
+    margin: 0;
+    font-size: 12px;
+    padding-left: 13px;
+    vertical-align: middle;
+    color: #666;
+}
+.gift {
+    font-size: 12px;
+    padding-left: 3px;
+    vertical-align: middle;
+    color: #666;
+}
+.giftIcon {
+    background: url(../img/icon-gift-guarantee.png) top left no-repeat;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    width: 14px;
+    height: 16px;
 }
 .vouch-title {
     font-size: 13px;
     font-weight: bold;
+    color: #666;
 }
 .valid {
     font-size: 14px;
     margin-top: -12px;
+}
+.or-divider {
+    margin-left: 18px;
+    padding-bottom: 10px;
+}
+.dot-divide {
+    font-size: 6px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ccc;
+    margin-top: -5px;
+}
+.orText {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    vertical-align: middle;
+    padding: 0 6px 0 6px;
 }
 .thumbnail-border {
     padding: 15px;
@@ -457,9 +553,12 @@ a.wishlist {
     margin-bottom: 12px;
     border-top: 1px solid #aaa;
 }
-.bottom {
+.bottom-space {
+    height: 60px;
+}
+.navbar.navbar-default.navbar-fixed-bottom.footer {
     background-color: @footerBackground;
-    height: 45px;
+    height: 30px;
     width: 100%;
     position: fixed;
     left: 0;
@@ -469,13 +568,13 @@ a.wishlist {
     ul {
         padding-bottom: 0;
         margin: 0;
-        margin-top: 5px;
-        color: #ffffff;
+        margin-top: -5px;
+        color: #fff;
     }
     li {
         list-style-type: none;
         display: inline-block;
-        padding: 6px;
+        padding: 4px;
         padding-bottom: 0;
         a {
             color: #ffffff;
@@ -488,9 +587,8 @@ a.wishlist {
 .foot-links-right {
     ul {
         margin: 0;
-        color: #ffffff;
-        margin-left: 1060px;
-        margin-top: -30px;
+        color: #fff;
+        margin-top: -10px;
     }
     li {
         list-style-type: none;
@@ -498,7 +596,7 @@ a.wishlist {
         padding: 10px;
         padding-bottom: 0;
         a {
-            color: #ffffff;
+            color: #fff;
             font-size: 11px;
             font-weight: bold;
         }
@@ -520,6 +618,10 @@ img.main-image-mobile {
     max-width: 100%;
     margin-top: -20px;
 }
+.heartIconMob {
+    position: absolute;
+    right: 30px;
+}
 .review-stars {
     padding: 15px 0 5px 0px;
 }
@@ -527,9 +629,11 @@ img.main-image-mobile {
     color: #333;
     font-weight: bold;
     font-size: 36px;
-    margin-top: -10px;
+    margin-top: 10px;
+    margin-left: -85px;
 }
 .added-info {
+    font-size: 13px;
     margin-top: 15px;
     margin-bottom: 5px;
     margin-bottom: 20px;
@@ -538,10 +642,10 @@ img.main-image-mobile {
     padding-left: 10px;
 }
 .heading-mobile {
-    margin-top: 25px;
+    margin-top: 10px;
 }
 .subtitle-mobile {
-    padding-top: 5px;
+    padding-top: 6px;
     padding-left: 1px;
 }
 .venue-header {
@@ -559,11 +663,14 @@ img.main-image-mobile {
     line-height: 18px;
 }
 .includes-mobile {
-    list-style-type: none;
+    padding-left: 16px;
+}
+.includes-mobile li {
+    list-style-image: url(../img/icon-bullet.png);
     font-size: 14px;
+    line-height: 18px;
+    padding: 0 0 5px 0;
     color: #666666;
-    margin-left: -40px;
-    line-height: 22px;
 }
 .content-mobile {
     font-size: 14px;
@@ -577,18 +684,31 @@ img.main-image-mobile {
     margin-bottom: 0px;
     color: #666;
 }
+.btn-danger.btn.custom-book-mobile {
+    padding: 12px;
+}
+.btn-danger.btn.custom-vouch-mobile {
+    padding: 12px;
+}
+.book {
+    font-size: 15px;
+}
+.vouch {
+    font-size: 15px;
+}
 .custom-book-mobile {
-    width: 40%;
     margin-top: 15px;
-    margin-bottom: 10px;
-    margin-left: 20px;
+    margin-bottom: 15px;
+    margin-left: 7px;
+    width: 45%;
     background-color: #ff3333;
     border-color: #ff3333;
 }
 .custom-vouch-mobile {
-    width: 40%;
-    margin-left: 40px;
-    margin-bottom: -5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 7px;
+    width: 45%;
     background-color: @redballoonBlue;
     border-color: @redballoonBlue;
 }
@@ -596,6 +716,19 @@ img.main-image-mobile {
     background-color: #006699;
     border-color: #006699;
 }
-.bottom-space {
-    height: 60px;
+
+#condensed-info {
+    background-color: #ddd;
+    padding: 0 15px 15px 15px;
+}
+.wish-mob {
+    background-color: black;
+    opacity: 0.4;
+    border-radius: 8px;
+    padding: 18px;
+    position: absolute;
+    top: -6px;
+    right: 28px;
+    width: 30px
+    height: 30px;
 }

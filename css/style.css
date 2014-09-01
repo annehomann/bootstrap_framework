@@ -324,6 +324,7 @@ img {
 	border-left: none;
 	border-right: none;
 	border-bottom: none;
+	border-top-color: red;
 	border-top-width: 2px;
 }
 

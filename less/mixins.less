@@ -1,0 +1,132 @@
+// Mixins
+
+.mix-appearance( @appearance ) {
+  -webkit-appearance: @appearance;
+      -ms-appearance: @appearance;
+       -o-appearance: @appearance;
+          appearance: @appearance;
+}
+
+.mix-transition( @transition ) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+
+.mix-opacity( @opacity ) {
+	@ieopacity: @opacity * 100;
+	.lt-ie9 & {
+	    -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{ieopacity})";
+	}
+	.lt-ie9 & * {
+		filter: none;
+	}
+    opacity: @opacity;
+}
+
+.mix-box-shadow( @shadow ) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+.mix-text-shadow( @shadow ) {
+  -webkit-text-shadow: @shadow;
+     -moz-text-shadow: @shadow;
+          text-shadow: @shadow;
+}
+
+.mix-collapse-icon ( @state ) when (@state = open ) {
+	width: 12px;
+	height: 7px;
+	padding: 15px;
+	cursor: pointer;
+	background: url("img/collapse-arrow-up.png") no-repeat center center;
+}
+.mix-collapse-icon ( @state ) when (@state = closed ) {
+	background: url("img/collapse-arrow-down.png") no-repeat center center;
+}
+
+.mix-gradient-vertical ( @startColor, @endColor ) {
+	background-color: mix(@startColor, @endColor, 60%);
+	background-image: -ms-linear-gradient(top, @startColor 0%, @endColor 100%); // IE10
+	background-image: -webkit-linear-gradient(top, @startColor 0%, @endColor 100%); // Safari 5.1+, Chrome 10+
+	background-image: -o-linear-gradient(top, @startColor 0%, @endColor 100%); // Opera 11.10
+	background-image: linear-gradient(top, @startColor 0%, @endColor 100%); // The standard
+	background-repeat: repeat-x;
+	filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)", @startColor, @endColor)); // IE9 and down
+}
+
+.mix-gradient-horizontal ( @startColor, @endColor ) {
+    background-color: @endColor;
+    background-image: -moz-linear-gradient(left, @startColor, @endColor); // FF 3.6+
+    background-image: -ms-linear-gradient(left, @startColor, @endColor); // IE10
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+    background-image: -webkit-linear-gradient(left, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+    background-image: -o-linear-gradient(left, @startColor, @endColor); // Opera 11.10
+    background-image: linear-gradient(left, @startColor, @endColor); // The standard
+    background-repeat: repeat-x;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",@startColor,@endColor)); // IE9 and down
+}
+
+.mix-placeholder( @color ) {
+	.form-control::-webkit-input-placeholder { // WebKit browsers
+	    color: @color;
+	}
+	.form-control:-moz-placeholder { // Mozilla Firefox 4 to 18
+	    color: @color;
+	    opacity:  1;
+	}
+	.form-control::-moz-placeholder { // Mozilla Firefox 19+
+	    color: @color;
+	    opacity:  1;
+	}
+	.form-control:-ms-input-placeholder { // Internet Explorer 10+
+	    color: @color;
+	}
+}
+
+.mix-flexbox() {
+	// 2009 syntax
+	display: -webkit-box;	// iOS 6-, Safari 3.1-6
+	display: -moz-box;		// Firefox 19- (buggy but mostly works)
+	display: box;
+
+	// 2011 Tweener phase
+	display: flexbox;
+    display: -ms-flexbox;	// IE 10
+
+	// New syntax
+    display: -webkit-flex;	// Chrome
+    display: flex;
+}
+
+.mix-flexbox-justify(@justify) {
+	// 2009 syntax
+	-webkit-box-pack: @justify;
+	-moz-box-pack: @justify;
+	-ms-box-pack: @justify;
+	box-pack: @justify;
+
+	// New syntax
+	-webkit-justify-content: @justify;
+	-moz-justify-content: @justify;
+	-ms-justify-content: @justify;
+	justify-content: @justify;
+}
+
+.mix-flexbox-grow( @size ) {
+	// 2009 syntax
+	-webkit-box-flex: @size;
+	-moz-box-flex: @size;
+	-ms-box-flex: @size;
+	box-flex: @size;
+
+	// New syntax
+	-webkit-flex-grow: @size;
+	-moz-flex-grow: @size;
+	-ms-flex-grow: @size;
+	flex-grow: @size;
+
+}

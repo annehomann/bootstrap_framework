@@ -1,0 +1,421 @@
+// Main header
+// ----------------------------------------------------
+.navbar-main {
+	height: 136px;
+	margin: 0;
+	border-top: 32px solid @red;
+	border-radius: 0;
+	box-shadow: none;
+	background: @red url("img/master-header-pattern.png") repeat 0 0;
+}
+.navbar-main:after { // Add darker red line below top border
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: darken( @red, 9.5%);
+}
+.navbar-main .container {
+	background: transparent;
+}
+.navbar-main .navbar-header {
+	position: relative; // For .navbar-brand
+}
+// Logo
+.navbar-main .navbar-brand {
+	position: absolute;
+	left: -6px;
+	top: -26px; // Height of top border of .navbar-default
+	overflow: hidden;
+	width: 308px;
+	height: 152px;
+	background: url("img/header-logo.png") no-repeat 0 0;
+	text-indent: -9999px;
+}
+.navbar-main .navbar-collapse {
+	position: relative; // For .navbar-form
+}
+.navbar-main .navbar-nav {
+	margin-top: -32px; // Lift it into red border
+	padding: 11px 11px 11px 0;
+	font-size: (@font-size-small * 0.916667);
+	font-weight: bold;
+	text-transform: uppercase;
+	background: @red;
+}
+.navbar-main .navbar-nav > li {
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 1px solid @white;
+}
+.navbar-main .navbar-nav > li:first-child {
+	margin-left: 0;
+	padding-left: 0;
+	border-left: none;
+}
+.navbar-main .navbar-nav > li > a {
+	padding: 0;
+	line-height: 1;
+	text-shadow: none;
+}
+.navbar-main .navbar-nav > li > a {
+	color: @white;
+}
+.navbar-main .navbar-nav > li > a:hover,
+.navbar-main .navbar-nav > li > a:active,
+.navbar-main .navbar-nav > li > a:focus {
+	color: @white;
+	text-decoration: underline;
+	.mix-transition(all .2s ease-in-out);
+}
+.navbar-main .navbar-nav > .open > a,
+.navbar-main .navbar-nav > .open > a:hover,
+.navbar-main .navbar-nav > .open > a:focus {
+	color: @white;
+	background: transparent;
+}
+.navbar-main .navbar-nav .fa {
+	font-size: (@font-size-small * 1.083333);
+	margin-top: -2px;
+}
+// Company menu
+.navbar-company {
+	margin-left: -30px; // Align with far left end of content area
+}
+// User menu
+.navbar-main .navbar-user {
+	padding-right: 0;
+	padding-bottom: 0;
+}
+.navbar-user .badge {
+	margin-top: -4px; // Align with other menu items
+	padding: 3px 4px;
+	font-size: @font-size-small;
+	color: @white;
+	border-radius: @border-radius-base;
+	background: @blue-light;
+}
+// Voucher
+.navbar-user > li.voucher {
+	border-left-width: 0;
+}
+.navbar-user > li.voucher > a {
+	margin-top: -4px; // Set link on border line
+	padding: 7px 13px;
+	border-top-left-radius: @border-radius-base;
+	border-top-right-radius: @border-radius-base;
+	background: darken(@red, 15%);
+}
+.navbar-user > li.voucher > a:hover {
+	background: darken(darken(@red, 15%), 4%);
+}
+// Search
+.navbar-form {
+	position: absolute;
+	right: 0;
+	bottom: -70px;
+	margin: 0;
+	padding: 0;
+}
+.navbar-form .form-control {
+	width: 322px;
+	height: @btn-height-sm;
+	margin-right: 8px;
+	border-radius: @border-radius-base;
+}
+.navbar-form .btn {
+	text-transform: none;
+}
+// Dropdown
+.navbar-main .navbar-nav > li > .dropdown-menu {
+	right: -11px; // Align with down-pointing arrow
+	width: 113px;
+	min-width: 0;
+	margin-top: 10px;
+	padding: 0;
+	border-color: @gray-lighter-3;
+}
+.navbar-main .navbar-nav > li > .dropdown-menu:before { // Tip
+	position: absolute;
+	top: -14px;
+	right: 7px;
+	content: "\f0d8";
+	font-family: FontAwesome;
+	font-size: 21px;
+	color: @gray-lightest-2;
+}
+.navbar-main .navbar-nav .dropdown-menu > li {
+	border-bottom: 1px solid @background-color;
+}
+.navbar-main .navbar-nav .dropdown-menu > li:last-child {
+	border-bottom: 0;
+}
+.navbar-main .navbar-nav .dropdown-menu > li > a {
+	padding: 0 9px;
+	line-height: 26px;
+	text-transform: none;
+	border-bottom: 1px solid @gray-light;
+	background: @gray-lightest-2;
+}
+.navbar-main .navbar-nav .dropdown-menu > li:last-child > a {
+	border-bottom: 0;
+}
+.navbar-main .navbar-nav .dropdown-menu > li > a:hover {
+	background: @gray-lighter-3;
+}
+// Dropdown for cart
+.navbar-main .navbar-nav > li > .dropdown-menu-cart {
+	right: -7px; // Align with badge
+	width: 188px;
+	margin-top: 7px;
+	padding: 2px 0 7px;
+	background: @gray-lightest-2;
+}
+.dropdown-menu-cart p {
+	margin: 0;
+	font-size: @font-size-small;
+	line-height: 1.3;
+	color: @gray-darker;
+	white-space: normal;
+}
+.dropdown-menu-cart img + p {
+	margin-top: 7px;
+}
+.dropdown-menu-cart p span {
+	font-weight: bold;
+}
+.dropdown-menu-cart img {
+	float: left;
+	margin: 0 7px 5px 0;
+	border: 1px solid @gray-light;
+}
+.navbar-main .navbar-nav .dropdown-menu-cart > li > a {
+	overflow: hidden;
+	padding: 5px;
+}
+.dropdown-menu-cart .total {
+	padding: 8px 5px 0;
+}
+.dropdown-menu-cart .total p {
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.dropdown-menu-cart .total p span {
+	float: right;
+	font-weight: bold;
+}
+.dropdown-menu-cart button {
+	margin-top: 8px;
+	padding: 0 8px;
+	font-size: @font-size-small;
+	text-shadow: none;
+}
+.dropdown-menu-cart button + button {
+	float: right;
+}
+@media (max-width: 767px) {
+	.navbar-main,
+	.navbar-main > .container,
+	.navbar-header {
+		 -webkit-overflow-scrolling: touch;
+	}
+	// BEGIN: Slide-out menu
+	.sidr {
+	    display: none; // Shown by JS
+	    position: absolute;
+	    position: fixed;
+	    top: 0;
+	    height: 100%;
+	    z-index: 999999;
+	    width: 80%;
+	    overflow-x: none;
+	    overflow-y: auto;
+	    color: #333;
+	    background: @gray-dark;
+		.mix-box-shadow(inset 0 0 3px 0 @gray-darkest);
+	}
+	.sidr .sidr-inner {
+	    padding: 0 0 15px;
+	}
+	.sidr.right {
+	    left: auto;
+	    right: -80%;
+	}
+	.sidr.left {
+	    left: -80%;
+	    right: auto;
+	}
+	.heading-slide-in {
+		padding: 12px 12px 8px;
+		color: @gray-lighter-1;
+		text-transform: uppercase;
+		.mix-box-shadow(0 3px 7px rgba(0, 0, 0, 0.1));
+	}
+	.navbar-main .sidr .navbar-collapse {
+		padding: 0;
+		border: 0;
+		background: transparent none;
+	}
+	.sidr .navbar-nav {
+		padding: 0;
+		background: transparent none;
+	}
+	.navbar-main .sidr .navbar-nav > li {
+		border-bottom: 1px solid @gray-darkest;
+	}
+	.navbar-main .sidr .navbar-nav > li > a {
+		margin: 0;
+		color: @white;
+		border-bottom: 1px solid @gray-dark;
+		.mix-text-shadow(2px 2px 1px rgba(0, 0, 0, 0.4));
+		background: darken(@gray-dark, 8%);
+	}
+	.navbar-main .sidr .navbar-nav > li > a:hover,
+	.navbar-main .sidr .navbar-nav > li > a:active,
+	.navbar-main .sidr .navbar-nav > li > a:focus {
+		.mix-text-shadow(none);
+	}
+	.navbar-main .sidr .navbar-nav .dropdown-menu > li > a:hover,
+	.navbar-main .sidr .navbar-nav .dropdown-menu > li > a:active,
+	.navbar-main .sidr .navbar-nav .dropdown-menu > li > a:focus {
+		background: @gray-lighter-3;
+	}
+	// END: Slide-out menu
+	.navbar-main {
+		height: 102px;
+		border-top: 0;
+	}
+	.navbar-main:after {
+		content: none;
+	}
+	.navbar-main .navbar-toggle {
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		margin: 0;
+		padding: 8px 10px;
+		border: none;
+	}
+	.navbar-main .navbar-toggle:hover,
+	.navbar-main .navbar-toggle:active,
+	.navbar-main .navbar-toggle:focus {
+		background: darken(@red, 15%);
+	}
+	.navbar-main .navbar-toggle .icon-bar {
+		height: 3px;
+		background: @white;
+	}
+	.navbar-main .navbar-header {
+		padding-top: 100px; // Push .navbar-collapse below .navbar-toggle
+	}
+	.navbar-main .navbar-brand { // Logo
+		left: -6px;
+		top: -12px;
+		width: 154px;
+		height: 76px;
+		background-size: 154px 76px; // Reduce to 50%
+	}
+	.navbar-main > .container {
+		position: relative; // For .navbar-toggle
+		height: 100%;
+	}
+	.navbar-main .navbar-collapse {
+		z-index: 2; // Must overlay mega menu dropdown
+		border-bottom: 2px solid @gray-lighter-2;
+		background: @background-color;
+	}
+	.navbar-form {
+		top: 64px;
+		bottom: auto;
+		width: 100%;
+		padding-left: 5px;
+		border: 0;
+	}
+	.navbar-form .btn {
+		width: 20%;
+	}
+	.navbar-form .form-group {
+		display: inline-block;
+		vertical-align: bottom;
+		width: 78%;
+		margin: 0;
+	}
+	.navbar-form .form-control {
+		width: 100%;
+		margin: 0;
+	}
+	.navbar-main .navbar-nav {
+		margin: 0;
+	}
+	.navbar-main .navbar-nav {
+		font-size: @font-size-base;
+		font-weight: normal;
+	}
+	.navbar-main .navbar-nav > li {
+		margin: 0;
+		padding: 0;
+		border: 0
+	}
+	.navbar-main .navbar-nav > li > a {
+		margin: 0 -15px;
+		padding: 7px 15px;
+		color: @gray-dark;
+		line-height: normal;
+		text-transform: none;
+	}
+	.navbar-main .navbar-nav > li > a:hover,
+	.navbar-main .navbar-nav > li > a:active,
+	.navbar-main .navbar-nav > li > a:focus,
+	.navbar-main .navbar-nav > .open > a,
+	.navbar-main .navbar-nav > .open > a:hover,
+	.navbar-main .navbar-nav > .open > a:focus {
+		color: @gray-dark;
+		text-decoration: none;
+		background: @gray-lighter-3;
+	}
+	.navbar-user,
+	.navbar-company {
+	  margin: 0;
+	}
+	// User menu
+	.navbar-main .navbar-nav > li > .dropdown-menu {
+		width: auto;
+		margin: 0;
+		border: 0;
+	}
+	.navbar-main .navbar-nav > li > .dropdown-menu:before {
+		content: none;
+	}
+	.navbar-user > li.voucher > a {
+		background: transparent;
+		border-radius: 0;
+	}
+	// Cart
+	.navbar-cart {
+		position: absolute;
+		top: 1px;
+		right: 40px;
+		padding: 10px; // Finger friendly
+		font-size: @font-size-medium;
+		color: @white;
+	}
+	.navbar-cart .fa-shopping-cart:before {
+		color: @white;
+	}
+	.navbar-cart .badge {
+		margin-left: 4px;
+		color: @white;
+		background: @blue-light;
+	}
+	.navbar-cart:hover,
+	.navbar-cart:active,
+	.navbar-cart:focus {
+		color: @white;
+		text-decoration: none;
+	}
+	.navbar-cart:hover .fa {
+		position: relative;
+	}
+}
