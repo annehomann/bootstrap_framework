@@ -367,11 +367,11 @@ a.wishlist {
   color: #999999;
 }
 .well {
+  border-radius: 0;
   border-style: solid;
   border-left: none;
   border-right: none;
   border-bottom: none;
-  border-top-color: red;
   border-top-width: 2px;
 }
 .ex-price {
