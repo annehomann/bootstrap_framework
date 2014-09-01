@@ -39,12 +39,6 @@ img {
   padding-left: 2px;
   color: #1d85c7;
 }
-.glyphicon-user,
-.glyphicon-time {
-  padding-left: 2px;
-  font-size: 1.3em;
-  color: #1d85c7;
-}
 .glyphicon-ok-sign,
 .glyphicon-gift,
 .glyphicon-calendar {
@@ -52,15 +46,11 @@ img {
   font-size: 1em;
   color: #1d85c7;
 }
-.glyphicon-stop {
-  font-size: 0.8em;
-  color: #1d85c7;
-}
 .glyphicon-minus {
   font-size: 1.6em;
   color: #1d85c7;
 }
-.glyphicon-star {
+.fa-star {
   font-size: 1.2em;
   color: #1d85c7;
 }
@@ -72,8 +62,10 @@ img {
   vertical-align: middle;
 }
 .glyphicon-search {
-  font-size: 0.8em;
+  font-size: 1.2em;
   color: #1d85c7;
+  margin-left: -7px;
+  margin-right: 10px;
 }
 .glyphicon-search.mobile {
   font-size: 1.4em;
